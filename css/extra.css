@@ -1,0 +1,23 @@
+.redc {color:#990000;}
+.redg {color:#006600;}
+.redb {color:#000066;}
+.warncolor {color:#CC0000;}
+.graycolor {color:#666666;}
+
+.banner {font-family:"Times";font-size:15px;color:#990000;font-weight:bold;}
+.hint  { 
+	font-family:verdana;color:#990000;background:#f0f000;border:1px solid;padding:4px;border-color:#000000;line-height:20px;
+	border-radius: 12px;
+	-moz-border-radius: 12px ;
+	-webkit-border-radius:12px;
+}
+
+
+P {text-indent:2em;  }
+.ch_indent { text-indent:2em;  }
+
+.divedt {font-family:Arial;font-size:12px;border: 0px solid;background :transparent;}
+.monospaced { font-family:"Courier New"; }
+.printfoot { font-family:arial;font-size:11px;display:none; }
+.noprint { font-family:arial;font-size:11px; }
+
