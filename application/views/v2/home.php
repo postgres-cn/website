@@ -28,9 +28,13 @@ function getTimeShow($t) {
     <div class="header_img bg_blue">
         <!--可放一张图片-->
         <div class="container pageTitle">
-            <h4>世界上功能最强大的开源数据库</h4>
-            <h1>PostgreSQL中文社区</h1>
-            <h4>www.postgres.cn</h4>
+	<!--
+            <h2><a style="color:#fff;decoration:none" href=/v2/news/viewone/1/377>PostgreSQL 2018 中国技术大会圆满结束！资料分享中</a></h2> <br>
+            <h4 style='color:#fff'>浙江杭州吉利大厦 2018-12-15 -- 16 </h4>
+	-->
+            <h1 style='color:#fff'>PostgreSQL中文社区祝您新年快乐！ </h1>
+		<br><br><br><br>
+            <h3 style='color:#fff'>不忘初心 砥砺前行 PostgreSQL 2019 再出发！ </h3>
         </div>
     </div>
 <div class="container" style="margin-top: 20px">
@@ -80,6 +84,18 @@ function getTimeShow($t) {
 			}
 ?>
  </div>
+	<!--Org -->
+	<div class="panel panel-default">
+            <div class="panel-heading">社区组织</div>
+            <div class="panel-body">
+                <li>主　席：<b>赵振平</b></li>
+                <li>副主席：<b>唐成</b></li>
+                <li>委　员：<small>
+萧少聪、周正中、汪洋、张文升、陈河堆、朱贤文、李海龙、周到京、白国华、姜明俊、谭峰、胡辉、王硕、陈华军、秦红胜、刘泉、胡怡文、彭煜玮、胡森、姚延栋。(排名不分先后)</small> </li>
+            </div>
+
+	</div>
+
         <!--社区信息统计及最新用户显示-->
         <div class="panel panel-default">
             <div class="panel-heading">社区信息统计</div>
@@ -144,7 +160,20 @@ function getTimeShow($t) {
 				<?php foreach($onen2 as $onen) : ?>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="/image/timg1.jpg"  width="242" height="200">
+			<?php
+                              $sysid = $onen['sysid'];
+                              $year =  substr($onen['pubtime'],0,4) ;
+                              $path  = './images/news/' . $year .'/' ;
+                              $r_path = '/images/news/' . $year .'/' ;
+                              $pic_file_prefix = $path .$sysid ;
+                             if ( file_exists($pic_file_prefix.'_1.jpg') ) {
+                             	echo "<img src=".$r_path.$sysid."_1.jpg width=242 height=200 ></img>";
+			    } else {
+                             	echo "<img src=/image/timg1.jpg height=200 width=242></img>";
+				}
+
+
+			?>
                         <div class="caption">
                             <h4><a href="#" ><?php echo isset($onen['thetitle'])? $onen['thetitle'] : '' ; ?></a></h4>
                             <p><?php echo $onen['brief_info'] ; ?></p>
@@ -156,34 +185,6 @@ function getTimeShow($t) {
 
             </div>
         </div>
-        <!--版本信息-->
-        <div class="well">
-            <div class="page-header" >
-                <h4><a href="/v2/release"> 版本信息 <small class="pull-right">更多发版列表>> </small> </a></h4>
-            </div>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>版本信息</th>
-                    <th>时间</th>
-                    <th>发布声明</th>
-                </tr>
-                </thead>
-                <tbody>
-				<?php
-					$count = 1 ;
-					foreach($pgvers as $pgver ):
-						echo "<tr><td><a href=/v2/release/v/". $pgver['sysid'] . "><b>PostgreSQL ".$pgver['theversion'] . "</b></a></td>" ; 
-						echo "<td>".  $pgver['reltime2'] ."</td>" ;
-						echo "<td><a href=/v2/release/v". $pgver['sysid'].">发布声明</a></td></tr>"; 
-						$count ++ ;
-					endforeach ;
-				?>
-
-                </tbody>
-            </table>
-        </div>
-
         <!--社区大小事-->
         <div class="well">
             <div class="page-header" >
@@ -207,6 +208,36 @@ function getTimeShow($t) {
 				<td><?php echo getTimeShow($tnews['age']) ; ?></td></tr>
 
 			<?php  endforeach ; ?>
+                </tbody>
+            </table>
+        </div>
+
+        <!--版本信息-->
+        <div class="well">
+            <div class="page-header" >
+                <h4><a href="/v2/release"> 版本信息 <small class="pull-right">更多发版列表>> </small> </a></h4>
+            </div>
+            <table class="table">
+<!--
+                <thead>
+                <tr>
+                    <th>版本信息</th>
+                    <th>时间</th>
+                    <th>发布声明</th>
+                </tr>
+                </thead>
+-->
+                <tbody>
+				<?php
+					$count = 1 ;
+					foreach($pgvers as $pgver ):
+						echo "<tr><td><a href=/v2/release/v/". $pgver['sysid'] . "><b>PostgreSQL ".$pgver['theversion'] . "</b></a></td>" ; 
+						echo "<td>".  $pgver['reltime2'] ."</td>" ;
+						echo "<td><a href=/v2/release/v". $pgver['sysid'].">发布声明</a></td></tr>"; 
+						$count ++ ;
+					endforeach ;
+				?>
+
                 </tbody>
             </table>
         </div>
