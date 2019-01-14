@@ -33,7 +33,8 @@ $userpic = $this->session->userdata('userpic');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">PostgreSQL 中文社区</a>
+		<a class="navbar-brand" href="https://postgresql.org" target=_blank><img class="logo" src=/images/elephant_logo.png width="32" height="32"></img></a> 
+                <a class="navbar-brand" href="/v2/home">PostgreSQL中文社区</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,7 +43,7 @@ $userpic = $this->session->userdata('userpic');
                     <li><a href="/v2/news">社区新闻</a></li>
                     <li><a href="/v2/faq">有问有答(FAQ)</a></li>
                     <li><a href="/v2/about">了解PostgreSQL</a></li>
-					<li><a href="/home">V1</a></li>
+		<!--			<li><a href="/home">V1</a></li> -->
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相关资料 <span class="caret"></span></a>
