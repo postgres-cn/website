@@ -170,6 +170,12 @@ function getPageLinks($pageloc,$theurl,$totalrows , $per_page,$ext_info,$firstur
 
 public function create(){
 
+  $editors = $this->news_model->get_editors();
+  $username = $this->session->userdata('username');
+  if (strstr($editors, $username) == false) {
+    redirect('/v2/act/userinfo');
+  }
+
   $this->load->helper(array('form', 'url'));
   $this->load->library('form_validation');
 
