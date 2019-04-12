@@ -10,9 +10,8 @@
         <div class="col-md-3">
             <p><strong>加入我们：</strong></p>
             <ul class="QQnum">
-                <li>QQ群1：5276420</li>
-                <li>QQ群2：3336901</li>
-                <li>QQ群3：254622631</li>
+                <li>QQ群1：3336901</li>
+                <li>QQ群2：254622631</li>
                 <li>文档群：150657323</li>
             </ul>
         </div>
