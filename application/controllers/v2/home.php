@@ -13,12 +13,12 @@ public function index(){
 		   $data['bg_pic'] =  $query->row_array() ;
 
 
-	$query = $this->db->query("select sysid,theversion,thetype,to_char(reltime,'YYYY-MM-DD') reltime,left(thecontent,150) thecontent,author from pg_release_table where topshow=1 order by reltime desc limit 1 ") ;
+	$query = $this->db->query("select sysid,theversion,thetype,to_char(reltime,'YYYY-MM-DD') reltime,left(thecontent,150) thecontent,author from pg_release_table where topshow=1 and reltime < now() order by reltime desc limit 1 ") ;
 	if ($query->num_rows() > 0)
 		   $data['trel'] =  $query->row_array() ;
 
 
-	$query = $this->db->query('select sysid,left(thetitle,50) thetitle,theclass,viewclicks,comtclicks,age(now(),pubtime) age,author,org_author from news_table order by pubtime desc limit 6 ') ;
+	$query = $this->db->query('select sysid,left(thetitle,50) thetitle,theclass,viewclicks,comtclicks,age(now(),pubtime) age,author,org_author from news_table where pubtime < now()  order by pubtime desc limit 6 ') ;
 	if ($query->num_rows() > 0)
 		   $data['tnewss'] =  $query->result_array() ;
 
@@ -31,7 +31,7 @@ public function index(){
 		   $data['forums'] =  $query->result_array() ;
 
 
-	$query = $this->db->query("select sysid,theversion,to_char(reltime,'YYYY-MM-DD') as reltime2 from pg_release_table where topshow=1 order by reltime desc  limit 6 ") ;
+	$query = $this->db->query("select sysid,theversion,to_char(reltime,'YYYY-MM-DD') as reltime2 from pg_release_table where topshow=1 and reltime < now() order by reltime desc  limit 6 ") ;
 	if ($query->num_rows() > 0)
 		   $data['pgvers'] =  $query->result_array() ;
 
@@ -41,7 +41,7 @@ public function index(){
 	if ($query->num_rows() > 0)
 			$data['sums'] =  $query->row_array()  ;
 
-	$query = $this->db->query('select pubtime,author,thetitle,brief_info,sysid,org_author  from news_table where topshow=1 order by pubtime desc limit 2');
+	$query = $this->db->query('select pubtime,author,thetitle,brief_info,sysid,org_author  from news_table where topshow=1 and pubtime < now() order by pubtime desc limit 2');
 	if ($query->num_rows() > 0)
 		   $data['onen2'] =  $query->result_array() ;
 
