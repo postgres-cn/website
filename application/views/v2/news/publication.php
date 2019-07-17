@@ -144,6 +144,7 @@ var converter = new showdown.Converter({
 		tables: true,
 		tasklists: true,
 		simplifiedAutoLink:true,
+		literalMidWordUnderscores:true,
 		parseImgDimensions: true, //foo.jpg = 100x80 or 100x*  or 80%x*
 		excludeTrailingPunctuationFromURLs: true
 	});
