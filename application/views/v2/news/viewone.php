@@ -72,7 +72,7 @@
 				</div>
 
             </div>
-            <!--点赞btn-->
+            <!--点赞btn
             <div class="likebtn">
                 <button type="button" class="btn btn-success" 
 					onclick="document.location='/v2/news/goodclick/<?php echo $page.'/'.$sysid.'#comment';?>'" 
@@ -83,6 +83,7 @@
 				><i class="glyphicon glyphicon-thumbs-down"></i> 踩：<span><?php echo $news['badclicks']; ?></span></button>
                 
             </div>
+              -->
             <!--评论-->
             <div class="comment">
                 <div class="comment_header">
