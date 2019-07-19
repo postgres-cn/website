@@ -62,8 +62,10 @@
 							"<i class='glyphicon glyphicon-remove'></i></a> &nbsp;" ;
 				}
 				?>
+			    <!-- 
                         <i class="glyphicon glyphicon-thumbs-up"></i> 顶：<span><?php echo $news['goodclicks']; ?></span>
                         &nbsp;<i class="glyphicon glyphicon-thumbs-down"></i> 踩：<span><?php echo $news['badclicks']; ?></span>
+				-->
                     </div>
                 </div>
             </div>
