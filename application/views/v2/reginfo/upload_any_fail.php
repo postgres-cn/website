@@ -39,7 +39,7 @@
 <P>&nbsp;</p>
 <br>
 <div class=banner align=center>
-上传文件失账！！！10秒后将自动切换至上传页面。。。
+上传文件失败！！！10秒后将自动切换至上传页面。。。
 </div>
 
 <script language=javascript>
