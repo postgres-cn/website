@@ -111,6 +111,7 @@ public function viewone($page=1,$sysid = 0,$total_reply=0,$thetype){
 public function search(){
 
 	$key =  trim($_POST['keysrh']) ; 
+
 	$data['key'] = $key ; 
 
 
@@ -124,7 +125,9 @@ public function search(){
 
 	$sql = "select sysid,author,thetitle,creation_time,type from v_grp_faq where " ;
 	foreach($keyArray as $key1){
-	   $sql = $sql." (author='".$key1."' or thetitle like '%".$key1."%' or thecontent like '%".$key1."%') and " ; 
+		$onekey = $this->db->escape_like_str($key1) ;
+		$onekey_eq = $this->db->escape_str($key1) ;
+ 	    $sql = $sql." (author='".$onekey_eq."' or thetitle like '%".$onekey."%' ESCAPE '!' or thecontent like '%".$onekey."%'  ESCAPE '!') and " ; 
 	}
 	$sql = substr($sql,0,strlen($sql) -4) ;
 
