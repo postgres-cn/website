@@ -5,6 +5,7 @@ class Search extends CI_Controller {
     parent::__construct();
   }
 
+//重新下载至分支中，并重新提交以解决回车换行事宜
 public function index(){
 
 	$key_org =  trim($_POST['keysrh']) ; 
