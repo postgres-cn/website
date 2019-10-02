@@ -77,7 +77,7 @@
                     <li><a href=http://pgsql.navicat.com/>Navicat PostgreSQL GUI</a></li>
                     <li><a href=http://jdbc.postgresql.org/download.html>JDBC驱动下载</a></li>
                     <li><a href=http://initd.org/psycopg/tarballs/>Python语言驱动</a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/odbc/>ODBC驱动 </a></li>
+                    <li><a href=http://postgresql.org/ftp/odbc/version/msi/>ODBC驱动 </a></li>
                     <li><a href=https://bitbucket.org/ged/ruby-pg/downloads/>Ruby语言驱动  </a></li>
                 </ul>
             </div>
