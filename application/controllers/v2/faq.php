@@ -6,14 +6,12 @@ class Faq extends CI_Controller {
     $this->load->model('faq_model');
   }
 
-
 public function index( ){
 
 	$query = $this->db->query(" select thetype,ts,rs,nts,nrs from v_brief_faq " ) ;
 
 	if ($query->num_rows() > 0)
 		   $data['tfaq'] =  $query->result_array() ;
-
 
 	  $data['title'] = 'PG有问有答区'  ;
 	  $this->load->view('v2/templates/header', $data);
@@ -31,7 +29,6 @@ public function typelist($page=1,$thetype){
 	  $data['total_rows'] = $total_rows ;
 	  $data['pageoffset'] = $offset ;
 
-
 	  $data['grpfaq'] = $this->faq_model->get_faq($thetype,$per_page, $offset);
 
 	  $data['title'] = '分类问答:' . $thetype. '/FAQ Sub-Type';
@@ -41,7 +38,6 @@ public function typelist($page=1,$thetype){
 	  $this->load->view('v2/faq/typelist', $data);
 	  $this->load->view('v2/templates/footer');
 }
-
 
 
 public function delete($sysid = 0,$sub_id=0, $type='SUB'){

@@ -5,16 +5,13 @@ class Search extends CI_Controller {
     parent::__construct();
   }
 
-
 public function index(){
 
 	$key_org =  trim($_POST['keysrh']) ; 
-
 	$key = $this->db->escape_like_str($key_org) ;
 
 	$data['key'] = $key ; 
 	
-
 	if ( strlen($key) < 2 ) 
 		$data['keyshort']= 1 ; 
 	else
@@ -40,7 +37,6 @@ public function index(){
 	}else {
 		$data['recs'] =  null ; 
 	}
-
 
   $data['title'] = 'Search Result';
 
