@@ -29,6 +29,7 @@
 						<option value="/">不限版本</option>
 						<option value="/docs/11">只限11版本(未正式发布，先睹为快)</option>
 						<option value="/docs/10">只限10版本</option>
+						<option value="/docs/9.6">只限9版本</option>
 					</select>
 					  
                     <button type="submit" class="btn btn-default">文档搜索</button>
