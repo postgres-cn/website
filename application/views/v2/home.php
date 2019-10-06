@@ -148,8 +148,8 @@ function getTimeShow($t) {
         <div>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="/image/timg1.jpg"  width="242" height="148">
+                    <div class="thumbnail" style="height:420px">
+                        <img src="/image/timg1.jpg"  width="242" height="160">
                         <div class="caption">
                             <h4><a href="#">PostgreSQL<?php echo $trel['theversion']."发布" ; ?></a></h4>
                             <p><?php echo $trel['thecontent']; ?> </p>
@@ -159,7 +159,7 @@ function getTimeShow($t) {
                 </div>
 				<?php foreach($onen2 as $onen) : ?>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail" style="height:420px">
 			<?php
                               $sysid = $onen['sysid'];
                               $year =  substr($onen['pubtime'],0,4) ;
@@ -167,9 +167,9 @@ function getTimeShow($t) {
                               $r_path = '/images/news/' . $year .'/' ;
                               $pic_file_prefix = $path .$sysid ;
                              if ( file_exists($pic_file_prefix.'_1.jpg') ) {
-                             	echo "<img src=".$r_path.$sysid."_1.jpg width=242 height=200 ></img>";
+                             	echo "<img src=".$r_path.$sysid."_1.jpg  height=160 ></img>";
 			    } else {
-                             	echo "<img src=/image/timg1.jpg height=200 width=242></img>";
+                             	echo "<img src=/image/timg1.jpg height=160  ></img>";
 				}
 
 
