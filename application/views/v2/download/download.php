@@ -56,12 +56,12 @@
                 <ul>
                     <li><a href=http://ftp.postgresql.org/pub/source/v12.0/postgresql-12.0.tar.bz2>按此下载postgresql
                         12.0版本最新源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v11.0/postgresql-11.0.tar.gz>按此下载postgresql
-                        11.0版本最新源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v10.5/postgresql-10.5.tar.gz>按此下载postgresql
-                        10.5版本源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v9.6.6/postgresql-9.6.6.tar.gz>按此下载postgresql
-                        9.6版本源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v11.5/postgresql-11.5.tar.bz2>按此下载postgresql
+                        11.5版本最新源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v10.10/postgresql-10.10.tar.bz2>按此下载postgresql
+                        10.10版本源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v9.6.15/postgresql-9.6.15.tar.bz2>按此下载postgresql
+                        9.6.15版本源代码 </a></li>
                     <li>源码安装指导
                         <ul type=square>
 							<li>Linux平台编译安装的快捷参考(Centos平台)：
