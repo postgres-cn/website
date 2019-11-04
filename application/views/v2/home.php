@@ -25,18 +25,12 @@ function getTimeShow($t) {
 ?>
 <!--中间部分-->
 
-    <div class="header_img bg_blue">
-        <!--可放一张图片-->
-        <div class="container pageTitle">
-	<!--
-            <h2><a style="color:#fff;decoration:none" href=/v2/news/viewone/1/377>PostgreSQL 2018 中国技术大会圆满结束！资料分享中</a></h2> <br>
-            <h4 style='color:#fff'>浙江杭州吉利大厦 2018-12-15 -- 16 </h4>
-	-->
-            <h1 style='color:#fff'>PostgreSQL中文社区祝您新年快乐！ </h1>
-		<br><br><br><br>
-            <h3 style='color:#fff'>不忘初心 砥砺前行 PostgreSQL 2019 再出发！ </h3>
-        </div>
-    </div>
+<div class="Xheader_img Xbg_blue">
+<a target=_blank href="http://pg.itpub.net/ticket.html">
+<img src="/images/pg_conf_2019.jpg" style="max-width:100%;width:100%"></img>
+</a>
+</div>
+
 <div class="container" style="margin-top: 20px">
     <!--左边内容部分-->
     <div class="col-md-3">
