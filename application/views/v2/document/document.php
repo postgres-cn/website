@@ -22,8 +22,23 @@
                 <li><a href="#">相关资料</a></li>
                 <li class="active"><a href="#">文档资料</a></li>
             </ol>
+			<div  class="well well-sm">
+                <form method="GET" action="/v2/doc_search" class="form-inline">
+                    <input type="text" name="q" value="" placeholder="关键字1 关键字2" class="form-control"/>
+					<select name="u" class="form-control">
+						<option value="/">不限版本</option>
+						<option value="/docs/11">只限11版本(未正式发布，先睹为快)</option>
+						<option value="/docs/10">只限10版本</option>
+						<option value="/docs/9.6">只限9版本</option>
+					</select>
+					  
+                    <button type="submit" class="btn btn-default">文档搜索</button>
+
+                </form>
+            </div>
+
             <!--文档列表-->
-            <div class="well well-sm" style="position: relative;">
+            <div class="well well-sm" >
                 <h4><a target=_blank href="/docs/10/">PostgreSQL 10.1 版本在线手册 ...(中文版本)</a></h4>
                 <p>感谢瀚高软件的韩悦悦、陈华军等翻译小组的辛苦工作。</p>
                 <img src="/image/new_mark.jpg" width="50" style="position: absolute;right: -3px;top: -3px;"><!--新的内容右角标-->

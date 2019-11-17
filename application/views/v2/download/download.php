@@ -54,14 +54,34 @@
             <div class="well well-sm">
                 <h4><strong>源代码</strong></h4>
                 <ul>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v11.0/postgresql-11.0.tar.gz>按此下载postgresql
-                        11.0版本最新源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v10.5/postgresql-10.5.tar.gz>按此下载postgresql
-                        10.5版本源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v9.6.6/postgresql-9.6.6.tar.gz>按此下载postgresql
-                        9.6版本源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v12.0/postgresql-12.0.tar.bz2>按此下载postgresql
+                        12.0版本最新源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v11.5/postgresql-11.5.tar.bz2>按此下载postgresql
+                        11.5版本最新源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v10.10/postgresql-10.10.tar.bz2>按此下载postgresql
+                        10.10版本源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v9.6.15/postgresql-9.6.15.tar.bz2>按此下载postgresql
+                        9.6.15版本源代码 </a></li>
                     <li>源码安装指导
                         <ul type=square>
+							<li>Linux平台编译安装的快捷参考(Centos平台)：
+									<OL>
+									<LI>wget https://ftp.postgresql.org/pub/source/v12.0/postgresql-12.0.tar.bz2 </li>
+									<LI>tar xjvf postgresql*.bz2	#解压至一个目录</li>
+									<LI>cd potgresql-12.0</li>
+									<LI>./configure --prefix=/opt/pgsql #拟安装至/opt/pgsql</li>
+									<LI>make world			   </li>
+									<LI>make install-world		</li>
+									<LI>adduser postgres		#增加新用户，系统提示要给定新用户密码</li>
+									<LI>mkdir /opt/pgsql/data	#创建数据库目录</li>
+									<LI>chown -R postgres:postgres /opt/pgsql/data</li>
+									<LI>su - postgres			#使用postgres帐号操作</li>
+									<LI>/opt/pgsql/bin/initdb -D /opt/pgsql/data #初始化数据库</LI>
+									<LI>/opt/pgsql/bin/pg_ctl -D /opt/gsql/data -l logfile start  #启动数据库</LI>
+									<LI>/opt/pgsql/bin/createdb genericdb   #假定数据库名为gerericdb)</LI>
+									<LI>/opt/pgsql/bin/psql genericdb	# (进入数据库内部)</li>
+									</OL>
+								</li>
                             <li><a target=_blank href="#">Linux平台从源码编译过程文档</a></li>
                             <li><a target=_blank href="#">Windows平台从源码编译过程文档</a></li>
                         </ul>

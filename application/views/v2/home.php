@@ -25,18 +25,12 @@ function getTimeShow($t) {
 ?>
 <!--中间部分-->
 
-    <div class="header_img bg_blue">
-        <!--可放一张图片-->
-        <div class="container pageTitle">
-	<!--
-            <h2><a style="color:#fff;decoration:none" href=/v2/news/viewone/1/377>PostgreSQL 2018 中国技术大会圆满结束！资料分享中</a></h2> <br>
-            <h4 style='color:#fff'>浙江杭州吉利大厦 2018-12-15 -- 16 </h4>
-	-->
-            <h1 style='color:#fff'>PostgreSQL中文社区祝您新年快乐！ </h1>
-		<br><br><br><br>
-            <h3 style='color:#fff'>不忘初心 砥砺前行 PostgreSQL 2019 再出发！ </h3>
-        </div>
-    </div>
+<div class="Xheader_img Xbg_blue">
+<a target=_blank href="http://pg.itpub.net/ticket.html">
+<img src="/images/pg_conf_2019.jpg" style="max-width:100%;width:100%"></img>
+</a>
+</div>
+
 <div class="container" style="margin-top: 20px">
     <!--左边内容部分-->
     <div class="col-md-3">
@@ -148,8 +142,8 @@ function getTimeShow($t) {
         <div>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="/image/timg1.jpg"  width="242" height="148">
+                    <div class="thumbnail" style="height:420px">
+                        <img src="/image/timg1.jpg"  width="242" height="160">
                         <div class="caption">
                             <h4><a href="#">PostgreSQL<?php echo $trel['theversion']."发布" ; ?></a></h4>
                             <p><?php echo $trel['thecontent']; ?> </p>
@@ -159,7 +153,7 @@ function getTimeShow($t) {
                 </div>
 				<?php foreach($onen2 as $onen) : ?>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail" style="height:420px">
 			<?php
                               $sysid = $onen['sysid'];
                               $year =  substr($onen['pubtime'],0,4) ;
@@ -167,9 +161,9 @@ function getTimeShow($t) {
                               $r_path = '/images/news/' . $year .'/' ;
                               $pic_file_prefix = $path .$sysid ;
                              if ( file_exists($pic_file_prefix.'_1.jpg') ) {
-                             	echo "<img src=".$r_path.$sysid."_1.jpg width=242 height=200 ></img>";
+                             	echo "<img src=".$r_path.$sysid."_1.jpg  height=160 ></img>";
 			    } else {
-                             	echo "<img src=/image/timg1.jpg height=200 width=242></img>";
+                             	echo "<img src=/image/timg1.jpg height=160  ></img>";
 				}
 
 

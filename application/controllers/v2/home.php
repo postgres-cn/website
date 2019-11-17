@@ -45,7 +45,7 @@ public function index(){
 	if ($query->num_rows() > 0)
 		   $data['onen2'] =  $query->result_array() ;
 
-	$query = $this->db->query('select author,thetitle,sysid,comtclicks,viewclicks,sort_time,age(now(),sort_time) age from v_faq_list order by sort_time desc limit 5 ');
+	$query = $this->db->query('select author,thetitle,sysid,comtclicks,viewclicks,sort_time,age(now(),sort_time) age, thetype from v_faq_list order by sort_time desc limit 5 ');
 	if ($query->num_rows() > 0)
 		   $data['faqs'] =  $query->result_array() ;
 
