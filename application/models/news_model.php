@@ -183,9 +183,8 @@ class News_model extends CI_Model {
 		
 		}
 
-
-
-
+    public function get_feeds($limit = 100) {
+		$query = $this->db->get_where('v_news_list', array('topshow' => 1), $limit);
+		return $query->result_array();
+    }
 }
-
-?>
