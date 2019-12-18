@@ -24,13 +24,24 @@ function getTimeShow($t) {
 }
 ?>
 <!--中间部分-->
+    <div class="header_img bg_blue" style="height:320px;">
+        <!--可放一张图片-->
+            <h3 style="padding-top:80px;"><a style="color:#fff;decoration:none;" href="/v2/news/viewone/1/536" target="_blank">PostgreSQL 2019 中国技术大会圆满结束！资料下载</a></h3> 
+	<!--
+            <h1 style='color:#fff'>PostgreSQL中文社区祝您新年快乐！ </h1>
+	-->
+			<h3 style="color:#fff;"><img src='/images/doty2017.png' style="height:120px;"></img> <img src='/images/doty2018.png' style="height:120px;"></img> 蝉联DB-Engine“年度最佳数据库”</h3>
+			<br>
+			<h4 style='color:#fff;'>不忘初心 砥砺前行 PostgreSQL 2020 再出发！ </h4>
+    </div>
 
-<div class="Xheader_img Xbg_blue">
-<a target=_blank href="http://pg.itpub.net/ticket.html">
-<img src="/images/pg_conf_2019.jpg" style="max-width:100%;width:100%"></img>
-</a>
-</div>
-
+<!-- 当前大会需要推介时用
+	<div class="Xheader_img Xbg_blue">
+	<a target=_blank href="http://pg.itpub.net/ticket.html">
+		<img src="/images/pg_conf_2019.jpg" style="max-width:100%;width:100%"></img>
+	</a>
+	</div>
+-->
 <div class="container" style="margin-top: 20px">
     <!--左边内容部分-->
     <div class="col-md-3">
