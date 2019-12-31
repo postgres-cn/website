@@ -54,7 +54,7 @@ nav a{
 }
 
 .header_img{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/pg2019.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/pg_bg_20190301.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
