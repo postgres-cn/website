@@ -40,16 +40,19 @@ $userpic = $this->session->userdata('userpic');
                 <ul class="nav navbar-nav">
                     <li><a href="/v2/home">首页 <span class="sr-only">(current)</span></a></li>
                     <li><a href="/v2/news">社区新闻</a></li>
-                    <li class="hidden-xs hidden-sm"><a href="/v2/faq">有问有答</a></li>
+                    <li><a href="/v2/document">中文文档</a></li>
+                    <!-- 2020-02-20 Closed 
+                    <li class="hidden-xs hidden-sm"><a href="/v2/faq">有问有答</a></li> -->
                     <li><a href="/v2/certificate">培训认证</a></li>
 
                     <li class="dropdown hidden-xs hidden-sm" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相关资料 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 			                <li><a href="/v2/about">了解PostgreSQL</a></li>
-	                        <li><a href="/v2/book">图书</a></li>
-                            <li><a href="/v2/document">文档资料</a></li>
-                            <li><a href="/v2/download">软件下载</a></li>
+                            <li><a href="/v2/document">PostgreSQL相关文档</a></li>
+                            <li><a href="/v2/download">PostgreSQL软件下载</a></li>
+	                        <li><a href="/v2/book">PostgreSQL中文图书</a></li>
+                            <li><a href="/v2/news/typelist/1/会议资料">社区年会PPT资料</a></li>
                             <li><a href="/v2/community">关于中文社区</a></li>
                         </ul>
                     </li>
