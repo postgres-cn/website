@@ -27,7 +27,7 @@
                     <input type="text" name="q" value="" placeholder="关键字1 关键字2" class="form-control"/>
 					<select name="u" class="form-control">
 						<option value="/">不限版本</option>
-						<option value="/docs/11">只限11版本(未正式发布，先睹为快)</option>
+						<option value="/docs/11">只限11版本</option>
 						<option value="/docs/10">只限10版本</option>
 						<option value="/docs/9.6">只限9版本</option>
 					</select>
@@ -39,9 +39,12 @@
 
             <!--文档列表-->
             <div class="well well-sm" >
-                <h4><a target=_blank href="/docs/10/">PostgreSQL 10.1 版本在线手册 ...(中文版本)</a></h4>
-                <p>感谢瀚高软件的韩悦悦、陈华军等翻译小组的辛苦工作。</p>
+                <h4><a target=_blank href="/docs/11/">PostgreSQL 11.2 版本在线手册 ...(中文版本)</a></h4>
+                <p>感谢翻译小组(彭煜玮、车岩磊、陈华军、王昊、彭金金、徐小春、赵宇等)的辛苦工作。</p>
                 <img src="/image/new_mark.jpg" width="50" style="position: absolute;right: -3px;top: -3px;"><!--新的内容右角标-->
+            </div>            
+            <div class="well well-sm" >
+                <h4><a target=_blank href="/docs/10/">PostgreSQL 10.1 版本在线手册 ...(中文版本)</a></h4>
             </div>
             <div class="well well-sm">
                 <h4><a target=_blank href="/docs/9.6/index.html">PostgreSQL 9.6.0 版本在线手册 ...(中文版本) ... (英文原版)</a></h4>
@@ -53,7 +56,7 @@
                 <h4><a target=_blank href="/docs/9.4/index.html">PostgreSQL 9.4.4 版本在线手册 ... (中文版本) ... (英文原版)</a></h4>
             </div>
             <div class="well well-sm">
-                <h4><a href="/news/typelist/1/会议资料">PostgreSQL 历年大会资料汇总</a></h4>
+                <h4><a href="/v2/news/typelist/1/会议资料">PostgreSQL 历年大会资料汇总</a></h4>
             </div>
             <div class="well well-sm">
                 <h4><a target=_blank href="https://postgres-cn.github.io/pgbouncer-doc/">pgbouncer 1.7.2版本在线手册 ...(中文版本)</a></h4>
