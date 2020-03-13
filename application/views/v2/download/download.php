@@ -54,21 +54,21 @@
             <div class="well well-sm">
                 <h4><strong>源代码</strong></h4>
                 <ul>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v12.0/postgresql-12.0.tar.bz2>按此下载postgresql
-                        12.0版本最新源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v11.5/postgresql-11.5.tar.bz2>按此下载postgresql
-                        11.5版本最新源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v10.10/postgresql-10.10.tar.bz2>按此下载postgresql
-                        10.10版本源代码 </a></li>
-                    <li><a href=http://ftp.postgresql.org/pub/source/v9.6.15/postgresql-9.6.15.tar.bz2>按此下载postgresql
-                        9.6.15版本源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v12.2/postgresql-12.2.tar.bz2>按此下载postgresql
+                        12.2版本最新源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v11.7/postgresql-11.7.tar.bz2>按此下载postgresql
+                        11.7版本最新源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v10.10/postgresql-10.12.tar.bz2>按此下载postgresql
+                        10.12版本源代码 </a></li>
+                    <li><a href=http://ftp.postgresql.org/pub/source/v9.6.17/postgresql-9.6.17.tar.bz2>按此下载postgresql
+                        9.6.17版本源代码 </a></li>
                     <li>源码安装指导
                         <ul type=square>
 							<li>Linux平台编译安装的快捷参考(Centos平台)：
 									<OL>
-									<LI>wget https://ftp.postgresql.org/pub/source/v12.0/postgresql-12.0.tar.bz2 </li>
+									<LI>wget https://ftp.postgresql.org/pub/source/v12.2/postgresql-12.2.tar.bz2 </li>
 									<LI>tar xjvf postgresql*.bz2	#解压至一个目录</li>
-									<LI>cd potgresql-12.0</li>
+									<LI>cd potgresql-12.2</li>
 									<LI>./configure --prefix=/opt/pgsql #拟安装至/opt/pgsql</li>
 									<LI>make world			   </li>
 									<LI>make install-world		</li>
@@ -91,8 +91,8 @@
             <div class="well well-sm">
                 <h4><strong>其他相关工具或驱动</strong></h4>
                 <ul>
-                    <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin4/v3.4>开源工具软件PgAdmin4 V3.4</a></li>
-                    <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin3/v1.22.2/>开源工具软件PgAdmin3 V1.22.2</a></li>
+                    <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.18>开源工具软件PgAdmin4 V4.18</a></li> <!--
+                    <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin3/v1.22.2/>开源工具软件PgAdmin3 V1.22.2</a></li> -->
                     <li><a href=http://www.sqlmanager.net/en/products/studio/postgresql/download/>EMS SQL Manager Studio for PostgreSQL </a></li>
                     <li><a href=http://pgsql.navicat.com/>Navicat PostgreSQL GUI</a></li>
                     <li><a href=http://jdbc.postgresql.org/download.html>JDBC驱动下载</a></li>
