@@ -17,7 +17,7 @@ class Upload_reg extends CI_Controller {
   $fileExt = pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
   $sysid = $_POST['upload_fname'] ;
   $new_filename = $sysid .'.'. $fileExt;
-   log_message('error', 'Fname='. $sysid .'.'. $fileExt );
+  log_message('error', 'Fname='. $sysid .'.'. $fileExt );
 
   $config['upload_path'] = $_POST['upload_path'];
   $config['file_name'] = $new_filename ;
@@ -44,6 +44,8 @@ class Upload_reg extends CI_Controller {
 		$this->db->where('sysid', $sysid);
 		$this->db->update('act', $up_rec);
 
+        // 更新 session 中的头像，让首页可以直接看到效果
+	   $this->session->set_userdata('userpic', $new_filename);
  	   $this->load->view('v2/templates/header');
 	   $this->load->view('v2/reginfo/upload_success', $data);
 	   $this->load->view('v2/templates/footer');

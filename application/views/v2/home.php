@@ -55,6 +55,9 @@ function getTimeShow($t) {
 	$username = $this->session->userdata('username');
 	$regtime = $this->session->userdata('regtime');
 	$userpic = $this->session->userdata('userpic');
+    if (strlen($userpic) < 6 || substr($userpic, -1) == '.') {
+        $userpic = 'null_pic.jpg';
+    }
 
 	if ( $username != FALSE ) {
 		       echo '<div class="panel-body"  style="text-align: center">' ;
@@ -64,7 +67,7 @@ function getTimeShow($t) {
 			   echo '     <li>注册：<span>'. $regtime . '</span></li>';
 			   echo ' </ul>' ;
 			   echo '</div>' ; 
-	}else { ?>
+	} else { ?>
 			<form action=/v2/act/login method=post>
             <div class="panel-body"> 
                 <div class="form-group clearfix">
@@ -118,7 +121,7 @@ function getTimeShow($t) {
                 <li class="list-group-item">
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object" src=/images/users/<?php echo strlen($nrec['picture']) < 6 ? "null_pic.jpg" : $nrec['picture'] ; ?> width="64px" height="64px"></img>
+                            <img class="media-object" src=/images/users/<?php echo (strlen($nrec['picture']) < 6 || substr($nrec['picture'], -1) == '.') ? "null_pic.jpg" : $nrec['picture'] ; ?> width="64px" height="64px"></img>
                         </a>
                     </div>
                     <div class="media-body">
