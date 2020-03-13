@@ -13,7 +13,7 @@ class Certificate extends CI_Controller {
     }
 
 
-	public function phase2($page=1,$theclass){
+	public function p2020($page=1,$theclass){
 	  $data['title'] = '已通过认证人员名单/Certificates List' ; 
 
 	  $this->load->view('v2/templates/header', $data);
