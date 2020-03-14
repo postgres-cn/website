@@ -55,7 +55,7 @@ function getTimeShow($t) {
 	$username = $this->session->userdata('username');
 	$regtime = $this->session->userdata('regtime');
 	$userpic = $this->session->userdata('userpic');
-    if (strlen($userpic) < 6 || substr($userpic, -1) == '.') {
+    if (!$userpic || substr($userpic, -1) == '.') {
         $userpic = 'null_pic.jpg';
     }
 
@@ -121,7 +121,7 @@ function getTimeShow($t) {
                 <li class="list-group-item">
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object" src=/images/users/<?php echo (strlen($nrec['picture']) < 6 || substr($nrec['picture'], -1) == '.') ? "null_pic.jpg" : $nrec['picture'] ; ?> width="64px" height="64px"></img>
+                            <img class="media-object" src=/images/users/<?php echo (strlen($nrec['picture']) < 6 || substr($nrec['picture'], -1) == '.') ? "null_pic.jpg" : $nrec['picture'] ; ?> width="64px" height="64px" style="max-width: none;"></img>
                         </a>
                     </div>
                     <div class="media-body">
