@@ -37,17 +37,6 @@
 				<td><?php echo $bURL['thememo'] ; ?></td>
 				</tr>
 			<?php  endforeach ; ?>
-	
-			<?php foreach($tURLs as $tURL) : ?>
-				<tr  >
-				<td><?php echo $tURL['platform_or_title'] ; ?></td>
-				<td><?php echo $tURL['is32_64'] ; ?></td>
-				<td><?php echo $tURL['isinstall_zip'] ; ?></td>
-				<td><a href=<?php echo $tURL['theurl'] ; ?>><?php echo $tURL['theversion'] ; ?>...按此下载</a></td>
-				<td><?php echo $tURL['thememo'] ; ?></td>
-				</tr>
-			<?php  endforeach ; ?>
-           
                 </table>
             </div>
 
