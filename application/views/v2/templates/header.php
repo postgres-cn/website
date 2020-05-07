@@ -42,8 +42,8 @@ $userpic = $this->session->userdata('userpic');
                     <li><a href="/v2/news">社区新闻</a></li>
                     <li><a href="/v2/document">中文文档</a></li>
                     <!-- 2020-02-20 Closed 
-                    <li class="hidden-xs hidden-sm"><a href="/v2/faq">有问有答</a></li> -->
-                    <li><a href="/v2/certificate">培训认证</a></li>
+                    <li class="hidden-xs hidden-sm"><a href="/v2/faq">有问有答</a></li> 
+                    <li><a href="/v2/certificate">培训认证</a></li> -->
 
                     <li class="dropdown hidden-xs hidden-sm" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相关资料 <span class="caret"></span></a>
