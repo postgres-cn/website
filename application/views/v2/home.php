@@ -30,11 +30,11 @@ function getTimeShow($t) {
             <h3 style="padding-top:80px;"><a style="color:#fff;decoration:none;" href="/v2/news/viewone/1/536" target="_blank">PostgreSQL 2019 中国技术大会圆满结束！资料下载</a></h3> 
 	-->
 	
-            <h2 style='padding-top:80px;color:#fff'>PostgreSQL中文社区拜年啦！祝您新春快乐！ </h2>
+            <h2 style='padding-top:80px;color:#fff;'>不忘初心 砥砺前行 PostgreSQL 2020 再出发！</h2>
 	
 			<h3 style="color:#fff;"><img src='/images/doty2017.png' style="height:120px;"></img> <img src='/images/doty2018.png' style="height:120px;"></img> 蝉联DB-Engine“年度最佳数据库”</h3>
 			<br>
-			<h4 style='color:#fff;'>不忘初心 砥砺前行 PostgreSQL 2020 再出发！ </h4>
+			
     </div>
 
 <!-- 当前大会需要推介时用
