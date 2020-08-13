@@ -66,7 +66,7 @@
 									<LI>chown -R postgres:postgres /opt/pgsql/data</li>
 									<LI>su - postgres			#使用postgres帐号操作</li>
 									<LI>/opt/pgsql/bin/initdb -D /opt/pgsql/data #初始化数据库</LI>
-									<LI>/opt/pgsql/bin/pg_ctl -D /opt/gsql/data -l logfile start  #启动数据库</LI>
+									<LI>/opt/pgsql/bin/pg_ctl -D /opt/pgsql/data -l logfile start  #启动数据库</LI>
 									<LI>/opt/pgsql/bin/createdb genericdb   #假定数据库名为gerericdb)</LI>
 									<LI>/opt/pgsql/bin/psql genericdb	# (进入数据库内部)</li>
 									</OL>
