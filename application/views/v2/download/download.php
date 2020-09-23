@@ -10,6 +10,9 @@
                 <li><a href="/v2/document">文档资料</a></li>
                 <li><a href="###">软件下载<span class="badge pull-right">*</span></a></li>
                 <li><a href="/v2/community">关于中文社区</a></li>
+				<li><hr size=1></li>
+                <li><a href="https://www.aliyum.com/product/rds/postgresql" target="_blank">阿里云PostgreSQL</a></li>
+
             </ul>
         </div>
 
@@ -80,7 +83,7 @@
             <div class="well well-sm">
                 <h4><strong>其他相关工具或驱动</strong></h4>
                 <ul>
-                    <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.18>开源工具软件PgAdmin4 V4.18</a></li> <!--
+                    <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.18>开源工具软件PgAdmin4 V4.24</a></li> <!--
                     <li><a href=https://www.postgresql.org/ftp/pgadmin/pgadmin3/v1.22.2/>开源工具软件PgAdmin3 V1.22.2</a></li> -->
                     <li><a href=http://www.sqlmanager.net/en/products/studio/postgresql/download/>EMS SQL Manager Studio for PostgreSQL </a></li>
                     <li><a href=http://pgsql.navicat.com/>Navicat PostgreSQL GUI</a></li>

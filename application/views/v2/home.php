@@ -24,11 +24,9 @@ function getTimeShow($t) {
 }
 ?>
 <!--中间部分-->
-    <div class="header_img bg_blue" style="height:320px;">
-        <!--可放一张图片-->
-	<!--
-            <h3 style="padding-top:80px;"><a style="color:#fff;decoration:none;" href="/v2/news/viewone/1/536" target="_blank">PostgreSQL 2019 中国技术大会圆满结束！资料下载</a></h3> 
-	-->
+<!--
+	<div class="header_img bg_blue" style="height:320px;">
+       ---     <h3 style="padding-top:80px;"><a style="color:#fff;decoration:none;" href="/v2/news/viewone/1/536" target="_blank">PostgreSQL 2019 中国技术大会圆满结束！资料下载</a></h3> 
 	
             <h2 style='padding-top:80px;color:#fff;'>不忘初心 砥砺前行 PostgreSQL 2020 再出发！</h2>
 	
@@ -36,6 +34,7 @@ function getTimeShow($t) {
 			<br>
 			
     </div>
+-->
 
 <!-- 当前大会需要推介时用
 	<div class="Xheader_img Xbg_blue">
@@ -44,6 +43,47 @@ function getTimeShow($t) {
 	</a>
 	</div>
 -->
+<?php 
+
+$keyList= array("about","discount","imgrecog","sales_p2p");
+
+$imgArr = array("about" =>"https://www.aliyun.com/product/rds/postgresql", 
+				"discount"=>"https://www.aliyun.com/database/postgresqlactivity",
+				"imgrecog"=>"https://help.aliyun.com/document_detail/154873.html",
+				"sales_p2p"=>"https://help.aliyun.com/document_detail/154080.html");
+shuffle($keyList) ;
+?>
+<section id="myCarousel" class="carousel slide" style="min-height:300px;max-height:450px;">
+	<ol class="carousel-indicators" style="margin-top:15px;">
+		<li data-target="#myCarousel" data-slide-to="0" class="active mr-3" style="width:20px;height:20px;margin-right:20px"></li>
+		<li data-target="#myCarousel" data-slide-to="1" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
+		<li data-target="#myCarousel" data-slide-to="2" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
+		<li data-target="#myCarousel" data-slide-to="3" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
+	</ol>
+
+	<section class="carousel-inner" style="min-height:300px;max-height:450px;">
+		<div class="item active">
+			<a href="<?php echo $imgArr[$keyList[0]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[0]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		</div>
+		<div class="item">
+			<a href="<?php echo $imgArr[$keyList[1]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[1]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		</div>
+		<div class="item">
+			<a href="<?php echo $imgArr[$keyList[2]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[2]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		</div>
+		<div class="item">
+			<a href="<?php echo $imgArr[$keyList[3]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[3]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		</div>
+	</section>
+
+	<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a href="#myCarousel" class="right carousel-control" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</section>
+
 <div class="container" style="margin-top: 20px">
     <!--左边内容部分-->
     <div class="col-md-3">
@@ -142,6 +182,8 @@ function getTimeShow($t) {
                     <li><a target=_blank href="https://www.postgresql.org/">PostgreSQL官网</a></li>
                     <li><a target=_blank href="https://www.citusdata.com/">Citus Data官网</a></li>
                     <li><a target=_blank href="http://www.postgis.net/">PostGIS官网</a></li>
+                    <li><a target=_blank href="https://www.aliyun.com/product/rds/postgresql">阿里云RDS PostgreSQL</a></li>
+
                     <li><a target=_blank href="https://github.com/digoal/blog/blob/master/README.md">德哥的博客</a></li>
                     <li><a target=_blank href="https://postgres.fun/">francs的博客</a></li>
                     <li><a target=_blank href="http://www.pgsql.tech">乘数的PG技术网站</a></li>
@@ -165,3 +207,11 @@ function getTimeShow($t) {
         <!-- < ? php require('home/faq.php'); ? > -->
     </div>
 </div>
+
+<script >
+    $("#myCarousel").carousel({
+        interval: 3000,
+        pause: "hover",
+        wrap: true
+    });
+</script>

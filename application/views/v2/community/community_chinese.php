@@ -9,6 +9,9 @@
                 <li><a href="/v2/document">文档资料</a></li>
                 <li><a href="/v2/download">软件下载</a></li>
                 <li class="active"><a href="/v2/community">关于中文社区</a></li>
+				<li><hr size=1></li>
+                <li><a href="https://www.aliyum.com/product/rds/postgresql" target="_blank">阿里云PostgreSQL</a></li>
+
             </ul>
         </div>
 

@@ -22,7 +22,7 @@
                 </td>
                 <td style="text-align: right;"><?php echo $pgver['reltime2']; ?></td>
                 <td style="width: 180px; text-align: right;">
-                    <a href="/v2/release/v<?php echo $pgver['sysid']; ?>">发布声明</a>
+                    <a href="/v2/release/v/<?php echo $pgver['sysid']; ?>">发布声明</a>
                 </td>
             </tr>
             <?php } ?>

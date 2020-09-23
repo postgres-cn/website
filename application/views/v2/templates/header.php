@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
 	<title><?php if ( isset($title) ) echo $title ; ?>: 世界上功能最强大的开源数据库...</title>
     <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" h ref="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/v2/style.css?t=1234">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script s rc="/js/jquery.slim.min.js"></script>
+    <script s rc="/js/bootstrap.bundle.min.js"></script>
+
 	<script src="/js/showdown.min.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
