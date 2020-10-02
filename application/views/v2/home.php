@@ -45,6 +45,8 @@ function getTimeShow($t) {
 -->
 <?php 
 
+$userAgent=isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'NONE_CLI';
+
 $keyList= array("about","discount","imgrecog","sales_p2p");
 
 $imgArr = array("about" =>"https://www.aliyun.com/product/rds/postgresql", 
@@ -52,27 +54,34 @@ $imgArr = array("about" =>"https://www.aliyun.com/product/rds/postgresql",
 				"imgrecog"=>"https://help.aliyun.com/document_detail/154873.html",
 				"sales_p2p"=>"https://help.aliyun.com/document_detail/154080.html");
 shuffle($keyList) ;
+$picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFound) > 0 ? "cover" : "contain" ;
+
 ?>
-<section id="myCarousel" class="carousel slide" style="min-height:300px;max-height:450px;">
-	<ol class="carousel-indicators" style="margin-top:15px;">
+<div  class="fluid" style="margin-top: 50px">
+<section id="myCarousel" class="carousel slide" style="min-height:300px;max-height:500px;" >
+	<ol class="carousel-indicators" style="margin-top:5px;">
 		<li data-target="#myCarousel" data-slide-to="0" class="active mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 		<li data-target="#myCarousel" data-slide-to="1" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 		<li data-target="#myCarousel" data-slide-to="2" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 		<li data-target="#myCarousel" data-slide-to="3" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 	</ol>
 
-	<section class="carousel-inner" style="min-height:300px;max-height:450px;">
-		<div class="item active">
-			<a href="<?php echo $imgArr[$keyList[0]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[0]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+	<section class="carousel-inner" style="min-height:300px;max-height:500px;">
+		<div class="item active" style="background-color:#223cd1;text-align:center;">
+			<a href="<?php echo $imgArr[$keyList[0]]; ?>" target="_blank"><img src="/image/aliyun_<?php echo $keyList[0]; ?>.jpg" 
+					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
-		<div class="item">
-			<a href="<?php echo $imgArr[$keyList[1]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[1]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		<div class="item" style="background-color:#223cd1;text-align:center;">
+			<a href="<?php echo $imgArr[$keyList[1]]; ?>" target="_blank"><img src="/image/aliyun_<?php echo $keyList[1]; ?>.jpg" 
+					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
-		<div class="item">
-			<a href="<?php echo $imgArr[$keyList[2]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[2]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		<div class="item" style="background-color:#223cd1;text-align:center;">
+			<a href="<?php echo $imgArr[$keyList[2]]; ?>" target="_blank" ><img src="/image/aliyun_<?php echo $keyList[2]; ?>.jpg" 
+					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
-		<div class="item">
-			<a href="<?php echo $imgArr[$keyList[3]]; ?>" target="_blank"><img src="/image/aliyun_2020_<?php echo $keyList[3]; ?>.jpg" alt="" style="width:100%;min-height:300px;max-height:450px;object-fit:cover;"></a>
+		<div class="item" style="background-color:#223cd1;text-align:center;">
+			<a href="<?php echo $imgArr[$keyList[3]]; ?>" target="_blank" ><img src="/image/aliyun_<?php echo $keyList[3]; ?>.jpg" 
+					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 	</section>
 
@@ -83,6 +92,7 @@ shuffle($keyList) ;
 		<span class="glyphicon glyphicon-chevron-right"></span>
 	</a>
 </section>
+</div>
 
 <div class="container" style="margin-top: 20px">
     <!--左边内容部分-->

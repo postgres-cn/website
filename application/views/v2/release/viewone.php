@@ -20,7 +20,9 @@
  </ol>
 
 
-<b> <?php echo $ver['reltime']; ?> 发布 </b> ... 翻译：<b><?php echo $ver['author']; ?></b><br><br>
+翻译：<b><?php echo $ver['author']; ?></b> ... 新闻稿采编：<b><?php echo $ver['inputtime']; ?> </b><br><br>
+
+<h4><strong>软件发布：<?php echo substr($ver['reltime'],0,10); ?> </strong></h4>
 
 <div id="rel_content">
 	<?php 
