@@ -70,9 +70,9 @@ class Doc_Search extends CI_Controller {
             return '请指定版本';
         }
 
-        if (!in_array($version, ['9.3', '9.4', '9.5', '9.6', '10', '11'])) {
-            return '版本不存在';
-        }
+        //if (!in_array($version, ['9.3', '9.4', '9.5', '9.6', '10', '11'])) {
+        //    return '版本不存在';
+        //}
 
         $dir = realpath(BASEPATH . "../docs/$version");
         echo $dir;
