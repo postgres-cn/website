@@ -109,7 +109,11 @@ class Doc_Search extends CI_Controller {
     private function getDocData($version, $dir, $entry) {
         $doc = new DOMDocument();
         $content = file_get_contents($dir . '/' . $entry);
-        $doc->loadXML($content);
+
+		if (in_array($version, ['9.3', '9.4', '9.5', '9.6'])) {
+            $doc->loadHTML($content);
+        }else 
+			$doc->loadXML($content);
 
         // 标题
         $title = $doc->getElementsByTagName('title')->item(0)->nodeValue;
