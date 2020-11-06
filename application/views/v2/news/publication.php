@@ -28,7 +28,8 @@
 
 <?php
 
-echo form_open_multipart('v2/news/create');
+//echo form_open_multipart('/v2/news/create');
+echo '<form action="/index.php/v2/news/create" method="post" accept-charset="utf-8" enctype="multipart/form-data">' ;
 
 $vad_info = validation_errors();
 

@@ -40,7 +40,7 @@ public function login(){
 		   $this->session->set_userdata('realname', $data['account']['realname']);
 		   session_start();
 		   $_SESSION['usernamex'] = $username ;
-		  redirect($to_url) ;
+		redirect('/v2/home') ;
 	}else {
 		  $this->load->view('v2/templates/header', $data);
 		  $this->load->view('v2/reginfo/login_fail', $data);

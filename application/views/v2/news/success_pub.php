@@ -27,7 +27,7 @@
 <P>&nbsp;</p>
 <br>
 <div class=banner align=center>
-新闻发布成功！将自动切换至新闻浏览页面。。。<a href=/news/viewone/1/<?php echo $newsid; ?>>或按此直接浏览</a>
+新闻发布成功！将自动切换至新闻浏览页面。。。<a href=/v2/news/viewone/1/<?php echo $newsid; ?>>或按此直接浏览</a>
 </div>
 
 <p>文件上传提示：</P>

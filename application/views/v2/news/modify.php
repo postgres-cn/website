@@ -29,8 +29,8 @@
 
 <?php
 
-echo form_open('v2/news/modify/'.$sysid.'/') ;
-//echo form_open_multipart('news/modify');
+//echo form_open('/v2/news/modify/'.$sysid.'/') ;
+echo '<form action="/index.php/v2/news/modify/'. $sysid .'" method="post" accept-charset="utf-8">' ;
 
 $vad_info = validation_errors();
 
