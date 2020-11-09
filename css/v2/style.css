@@ -117,6 +117,10 @@ nav a{
     background-color: #fff;
 }
 
+#documents .well {
+    position: relative;
+}
+
 .well .table{
     border: 1px solid #eee;
     /*table-layout: fixed;*/

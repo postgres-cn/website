@@ -16,7 +16,7 @@
 
     </div>
     <!--右边内容部分-->
-    <div class="col-md-9">
+    <div id="documents" class="col-md-9">
         <div class="well">
             <!--分级导航-->
             <ol class="breadcrumb">
