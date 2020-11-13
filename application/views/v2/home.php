@@ -54,6 +54,7 @@ $imgArr = array("about" =>"https://www.aliyun.com/product/rds/postgresql",
 				"imgrecog"=>"https://help.aliyun.com/document_detail/154873.html",
 				"sales_p2p"=>"https://help.aliyun.com/document_detail/154080.html");
 shuffle($keyList) ;
+//阿里云的PPT轮播要求每次随机顺序，因此大会的不加入数组；
 $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFound) > 0 ? "cover" : "contain" ;
 
 ?>
@@ -64,10 +65,15 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
 		<li data-target="#myCarousel" data-slide-to="1" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 		<li data-target="#myCarousel" data-slide-to="2" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 		<li data-target="#myCarousel" data-slide-to="3" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
+		<li data-target="#myCarousel" data-slide-to="4" class="mr-3" style="width:20px;height:20px;margin-right:20px"></li>
 	</ol>
 
 	<section class="carousel-inner" style="min-height:300px;max-height:500px;">
 		<div class="item active" style="background-color:#223cd1;text-align:center;">
+			<a href="http://pgconf2020.postgres.cn" target="_blank"><img src="/image/pgconf2020.png" 
+					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
+		</div>
+		<div class="item" style="background-color:#223cd1;text-align:center;">
 			<a href="<?php echo $imgArr[$keyList[0]]; ?>" target="_blank"><img src="/image/aliyun_<?php echo $keyList[0]; ?>.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
