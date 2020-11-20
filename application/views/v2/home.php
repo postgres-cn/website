@@ -70,7 +70,7 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
 
 	<section class="carousel-inner" style="min-height:300px;max-height:500px;">
 		<div class="item active" style="background-color:#223cd1;text-align:center;">
-			<a href="http://pgconf2020.postgres.cn" target="_blank"><img src="/image/pgconf2020.png" 
+			<a href="http://pgconf2020.postgres.cn" target="_blank"><img src="/image/pgconf2020_v2.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 		<div class="item" style="background-color:#223cd1;text-align:center;">
