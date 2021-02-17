@@ -1,0 +1,615 @@
+@media (min-width: 992px) {
+  .col-md-2{
+    height: 320px;
+  }
+}
+.navbar-default .navbar-nav>li>a:hover{
+  background: rgb(32, 91, 145);
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo{
+  width: 30px;
+  height: 30px;
+}
+.navpost{
+  width: 100%;
+    /* height: 40px; */
+    position: absolute;
+    z-index: 20;
+}
+.navbar{
+  margin-bottom: 60px;
+}
+.navbar-brand>img{
+  display: inline-block;
+  vertical-align: middle;
+  /* margin-right: 10px; */
+}
+.navbar{
+  background-color: #256ba9;
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: #fff;
+}
+.banner{
+  padding-top: 110px;
+}
+.banner-img{
+  display: block;
+}
+.banner-img-1{
+  width: 100%;
+}
+.banner{
+  position: relative;
+  background-color: #fff;
+}
+.banner-bg{
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+.banner .wrapper{
+  position: relative;
+}
+.banner-word{
+  position: absolute;
+  width: 490px;
+  top: 120px;
+  right: 0;
+  font-size: 52px;
+  color: #32609b;
+}
+.banner-1-wrapper{
+  width: 759px;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: -20px;
+}
+.banner-word-wrapper{
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  color: #fff;
+}
+.banner-1-title{
+  position: relative;
+  font-size: 24px;
+  padding-left: 50px;
+}
+.banner-1-title:before{
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  background-color: #fff;
+}
+.banner-1-word{
+  font-size: 16px;
+  width: 300px;
+  margin-top: 30px;
+  line-height: 28px;
+}
+.blue{
+  color: #4fb5e6;
+}
+.postgre-plan-left-wrapper{
+  position: relative;
+  background-color: #f5f5f5;
+  height: 940px;
+}
+.postgre-plan .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.postgre-plan-left{
+  position: absolute;
+  width: 430px;
+  right: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.postgre-plan [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.postgre-plan-left-title{
+  position: relative;
+  font-size: 36px;
+  color: #256ba9;
+  margin-bottom: 100px;
+  font-weight: 700;
+}
+.postgre-plan-left-title:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  bottom: -20px;
+  left: 0;
+  background-color: #256ba9;
+}
+.postgre-plan-left-word-1{
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.postgre-plan-left-word-2{
+  font-size: 18px;
+  line-height: 32px;
+}
+.postgre-plan-left-word-3{
+  margin-top: 80px;
+  padding-left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.postgre-plan-left-word-3:before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  background-color: #000;
+}
+.postgre-plan-right-wrapper{
+  position: relative;
+  height: 940px;
+}
+.postgre-plan-right{
+  padding-left: 50px;
+  position: absolute;
+  width: 770px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.postgre-plan-right-title{
+  font-size: 35px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.postgre-plan-right-word-1{
+  font-size: 20px;
+  color: #095192;
+  line-height: 40px;
+}
+.postgre-plan-right-word-2{
+  margin-top: 50px;
+  font-size: 18px;
+}
+.postgre-plan-img{
+  width: 26px;
+  height: 30px;
+  margin-top: 20px;
+}
+.postgre-plan-right-word-3{
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4fb5e6;
+  line-height: 28px;
+}
+.postgre-plan-right-word-4{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.postgre-plan-right-word-5{
+  margin-top: 80px;
+  padding-left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.postgre-plan-right-word-5:before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 10px;
+  left: 50px;
+  background-color: #000;
+}
+.postgre-members-header{
+  position: relative;
+  height: 405px;
+}
+.postgre-members-header-bg{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+.postgre-members-header .wrapper{
+  position: relative;
+}
+.postgre-members-header-left{
+  position: absolute;
+  top: 50px;
+}
+.postgre-members-header-left-title{
+  width: 350px;
+  font-size: 36px;
+  line-height: 46px;
+  color: #fff;
+  font-weight: 700;
+}
+.postgre-members-header-icon-wrapper{
+  margin-top: 50px;
+  display: flex;
+}
+.postgre-members-header-left-icon{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+}
+.postgre-members-header-left-icon:hover{
+  background: #759ac1;
+}
+.postgre-members-header-right-icon:hover{
+  background: #759ac1;
+}
+.postgre-members-header-right-icon{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  /* background: #759ac1; */
+  cursor: pointer;
+  color: #fff;
+}
+.postgre-members-header-right{
+  position: absolute;
+  right: 0;
+  top: 80px;
+  border: 10px solid #8ba8c7;
+  padding: 30px 50px 30px 20px;
+}
+.postgre-members-header-right-word-1{
+  font-size: 20px;
+  color: #fff;
+}
+.postgre-members-header-right-word-2{
+  margin-top: 20px;
+  position: relative;
+  padding-left: 50px;
+  font-size: 24px;
+  color: #fff;
+}
+.postgre-members-header-right-word-2:before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  background-color: #fff;
+}
+.postgre-members-wrapper{
+  /* margin-top: -150px; */
+  padding: 50px;
+  background-color: #fff;
+}
+.postgre-members-item{
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.postgre-members-item:hover .postgre-members-item-hover-wrapper{
+  display: flex;
+}
+.postgre-members-item-img{
+  width: 100%;
+  /* height: 158px; */
+  border-radius: 50%;
+  /* height: 100px; */
+}
+..postgre-members-item-img img{
+  width: 100%;
+}
+.postgre-members-item-hover-wrapper{
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  /* height: 380px; */
+  /* background: #305b8d; */
+  opacity: 0.5;
+  color: #fff;
+}
+.postgre-members-item-hover-word{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.postgre-members-item-hover-word i{
+  display: block;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.postgre-members-item-word{
+  position: relative;
+  z-index: 1;
+  /* margin-top: -50px; */
+  margin-left: 5%;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  /* border-bottom: 3px solid #4e7cae;
+  box-shadow: 0px 2px 5px #e1e1e1; */
+  text-align: center;
+}
+.postgre-members-item-title{
+  font-size: 22px;
+  color: #256ba9;
+  margin-bottom: 10px;
+}
+.postgre-tobe .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.postgre-tobe [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.postgre-tobe-title-wrapper{
+  height: 250px;
+  background-color: #f5f5f5;
+}
+.postgre-tobe-title{
+  padding-top: 80px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+.postgre-tobe-2-img{
+  height: 340px;
+  width: 100%;
+}
+.postgre-tobe-word{
+  width: 80%;
+  font-size: 20px;
+  line-height: 28px;
+  color: #095192;
+}
+.postgre-tobe-bg{
+  display: none;
+  width: 100%;
+  height: 340px;
+}
+.postgre-tobe-2-left-wrapper{
+  box-shadow: 3px 3px 2px #e1e1e1;
+  height: 338px;
+  position: relative;
+}
+.postgre-tobe-2-left-content{
+  float: right;
+  /* position: absolute; */
+  width: 500px;
+  /* right: 0;
+  top: 150px; */
+  margin-top: 100px;
+  margin-right: 50px;
+  
+}
+.postgre-tobe-2-title{
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.postgre-tobe-2-word{
+  padding: 0 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 30px;
+  border-left: 1px solid #bababa;
+}
+.postgre-grade{
+  margin-top: 120px;
+}
+.postgre-grade-title{
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+}
+.postgre-grade-title-1{
+  font-size: 20px;
+  color: #095192;
+  margin-top: 20px;
+}
+.download-wrapper{
+  margin-top: 30px;
+}
+.download-input-wrapper{
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+}
+.download-input-word{
+  display: inline-block;
+  padding: 10px 20px;
+  width: 200px;
+}
+.download-input-btn{
+  background-color: #f5f5f5;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #095192;
+  font-size: 16px;
+  cursor: pointer;
+}
+.download-input-img{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.download-input-tips{
+  margin-left: 10px;
+}
+.postgre-grade-title-2{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+.postgre-grade-content-2{
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555555;
+  line-height: 26px;
+  text-align: center;
+}
+.postgre-grade-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.postgre-grade-icon-wrapper{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.more-about .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.more-about{
+  /* height: 470px; */
+}
+.more-about [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.more-about-title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+.more-about-left{
+  position: relative;
+}
+.more-about-title-wrapper{
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  right: 50px;
+  transform: translate(0,-50%);
+}
+.more-about-left-img{
+  display: block;
+  width: 100%;
+  height: 470px;
+}
+.more-about-tips{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.more-about-right-img{
+  display: block;
+  width: 100%;
+  height: 470px;
+}
+
+
+.elevator{
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 10;
+  width: 240px;
+  display: none;
+}
+.elevator-item{
+  display: block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 40px;
+  border-left: 1px dashed #e9f1f8;
+  cursor: pointer;
+}
+.elevator-item:before{
+  position: absolute;
+  z-index: 101;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+  background-color: #fff;
+}
+.elevator-item-active{
+  color: #095192;
+}
+.elevator-item-active:before {
+  border: 1px solid #7c9bbc;
+}
+.elevator-item-active::after {
+  position: absolute;
+  z-index: 101;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #26518b;
+  background-color: #26518b;
+}
+.swiper-wrapper-pc{
+  display: none;
+}
+.swiper-wrapper-mobile{
+  display: none;
+}
+.footer-erweima{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.footer-erweima2{
+  margin-left: 20px;
+}

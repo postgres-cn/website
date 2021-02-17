@@ -1,0 +1,148 @@
+
+@media (max-width: 768px) {
+  body{
+    font-size: 14px;
+  }
+  .nav>li.dropdown{
+    display: none;
+  }
+  .wrapper{
+    width: 90%;
+  }
+  .header{
+    height: 15rem;
+  }
+  .header-bg{
+    height: 15rem;
+  }
+  .header-content-wrapper{
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    color: #fff;
+  }
+  .header-title{
+    font-size: 1.2rem;
+  }
+  .header-content{
+    margin-top: 1rem;
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  
+  .advantage-flex{
+    position: relative;
+  }
+  .advantage-img{
+    height: 15rem;
+  }
+  .advantage-flex-item-large{
+    position: absolute;
+    top: 15rem;
+    left: 0;
+  }
+  .advantage-flex-item{
+    width: 25%;
+    flex: 0 0 25%;
+  }
+  .advantage-1-word{
+    top: 10rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .advantage-3-word{
+    top: 10rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .advantage-2-word{
+    top: 2rem;
+    left: 1rem;
+  }
+  .advantage-2-tips{
+    width: 80%;
+  }
+  .advantage-2-tips-s{
+    width: 80%;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .advantage-2-title{
+    font-size: 2rem;
+  }
+  .advantage-progress{
+    bottom: -20px;
+  }
+  .grade-item-normal-p-1{
+    padding: 1rem 1rem;
+  }
+  .grade-item-normal-p-2{
+    margin-top: 0;
+    padding: 0 1rem;
+  }
+  .grade-item-normal-p-3{
+    padding: 0 1rem;
+  }
+  .grade-item-normal-p-4{
+    padding: 0 1rem;
+  }
+  .grade-item-normal-1 p{
+    padding: 5rem 2rem;
+  }
+  .grade{
+    padding-bottom: 3rem;
+  }
+  .course-img-1{
+    width: 100%;
+    height: 10rem;
+  }
+  .course-img{
+    height: 10rem;
+  }
+  .course-item-wrapper{
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .course-name{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .course-introduce{
+    margin-top: 1rem;
+  }
+  .agency-title-tips{
+    bottom: 0;
+  }
+  .agency{
+    padding-bottom: 3rem;
+  }
+  .agency .row .col-md-3{
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .agency-img{
+    width: 100%;
+  }
+  .questions-bg{
+    width: 100%;
+  }
+  .questions-tips{
+    width: 90%;
+  }
+  .questions-tips-1{
+    width: 90%;
+  }
+  .swiper-container{
+    height: 20rem;
+  }
+}
+@media (min-width: 1000px) {
+  body{
+    min-width: 1280px;;
+  }
+}

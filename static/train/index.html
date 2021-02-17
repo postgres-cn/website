@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>首页</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/banner.css" rel="stylesheet">
+  <link href="css/index.css?v=1" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navpost">
+    <div class="container-fluid wrapper">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://postgresql.org"><img class="logo" src="images/logo.png" alt=""></a>
+         <a href="/v2/home" class="navbar-brand"> PostgreSQL中文社区
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ><a href="/v2/home">首页 <span class="sr-only">(current)</span></a></li>
+          <li><a href="/v2/news">社区新闻</a></li>
+          <li><a href="/v2/document">中文文档</a></li>
+		                     <li><a href="/static/ace/">加入ACE</a></li> 
+                    <li><a href="/static/train/">培训认证</a></li> 
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相关资料 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/v2/about">了解PostgreSQL</a></li>
+              <li><a href="/v2/document">PostgreSQL相关文档</a></li>
+              <li><a href="/v2/download">PostgreSQL软件下载</a></li>
+           <li><a href="/v2/book">PostgreSQL中文图书</a></li>
+              <li><a href="/v2/news/typelist/1/会议资料">社区年会PPT资料</a></li>
+              <li><a href="/v2/community">关于中文社区</a></li>
+            </ul>
+          </li>
+        </ul>
+				<form class="navbar-form navbar-left  hidden-xs hidden-sm" name=srch action=/v2/search method=post>
+                    <div class="form-group" style="max-width:120px">
+                        <input type="text" class="form-control" name="keysrh" placeholder="Search" style="max-width:120px">
+                    </div>
+                </form>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/v2/act/register">注册</a></a></li>
+          <li><a href="/v2/act/userinfo">登录</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- header -->
+  <header class="header" style="margin-top: 50px;">
+    <img src="images/slide.jpg" class="img-responsive header-bg" alt="Responsive image">
+    <!-- banner文字 -->
+    <div class="titileClass">
+      PostgreSQL培训认证
+    </div>
+    <a class="titileLittleClass" href="./rankQuery.html">
+      认证证书查询
+    </a>
+    <!--<div class="header-content-wrapper">
+      <img src="images/brief.png" class="img-responsive" alt="Responsive image">
+      <p class="header-title">PostgreSQL培训认证</p>
+      <p class="header-content">由PostgreSQL中国社区打造的中国PostgreSQL培训认证是目前国内的最具权威的PostgreSQL技术等级认证 ,这对PostgreSQL的推广和发展都会起到巨大的作用。</p>
+    </div>-->
+  </header>
+
+  <section>
+    <!-- advantage -->
+    <div class="advantage" id="advantage">
+      <div class="wrapper row advantage-title-wrapper">
+        <div class="col-md-10">
+          <img src="images/advantage.jpg" class="img-responsive" alt="Responsive image">
+          <p class="title-tips">培训认证优势</p>
+        </div>
+        <div class="col-md-2 relative">
+          <div class="advantage-progress">
+            <span class="title-tips" id="title-tips">02</span> / <span>05</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="advantage-flex">
+        <div class="advantage-flex-item">
+          <img src="images/advantage-1.png" class="img-responsive advantage-img" alt="Responsive image">
+          <p class="advantage-1-word">权威认证</p>
+        </div>
+        <div class="advantage-flex-item-large">
+          <img src="images/advantage-2.png" class="img-responsive advantage-img" alt="Responsive image">
+          <div class="advantage-2-word">
+            <p class="advantage-2-title">完整的数据库课程</p>
+            <p class="advantage-2-tips">完整的数据库课程体系和初、中、高级课程资源，内容不断优化迭代</p>
+            <p class="advantage-2-tips-s">课程体系和课程资源由PG培训认证委员会合力开发；包括详实的PG课程教材、PPT课件、实验手册、技术视频课程。</p>
+          </div>
+          
+        </div>
+        <div class="advantage-flex-item">
+          <img src="images/advantage-3.png" class="img-responsive advantage-img" alt="Responsive image">
+          <p class="advantage-3-word">强有力的宣传平台</p>
+        </div>
+        <div class="advantage-flex-item">
+          <img src="images/advantage-4.png" class="img-responsive advantage-img" alt="Responsive image">
+          <p class="advantage-3-word">校企合作资源</p>
+        </div>
+        <div class="advantage-flex-item">
+          <img src="images/advantage-5.png" class="img-responsive advantage-img" alt="Responsive image">
+          <p class="advantage-3-word">PG企业合作</p>
+        </div>
+      </div> -->
+      <!-- 移动端 -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/advantage-1.jpg" class="img-responsive advantage-img" alt="Responsive image">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/advantage-2.jpg" class="img-responsive advantage-img" alt="Responsive image">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/advantage-3.jpg" class="img-responsive advantage-img" alt="Responsive image">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/advantage-4.jpg" class="img-responsive advantage-img" alt="Responsive image">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/advantage-5.jpg" class="img-responsive advantage-img" alt="Responsive image">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- pc端 -->
+      <div class="desktop-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="options">
+              <div class="option" data-index="0">
+                <div>
+                  <div class="info-wrapper">
+                    <!-- <img src="images/advantage-1.png" class="img-responsive advantage-img" alt="Responsive image"> -->
+                    <h2 class="title">权威认证</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="option active" data-index="1">
+                <div>
+                  <div class="info-wrapper">
+                    <!-- <img src="images/advantage-2.png" class="img-responsive advantage-img" alt="Responsive image"> -->
+                    <h2 class="title">权威的数据库课程</h2>
+                    <div class="description">
+                      <p>不断迭代进化的权威数据库课程体系</p>
+                      <p>课程体系和课程资源由PostgreSQL中国社区开发；包括详实的课程PPT、实验手册、技术视频等等。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="option" data-index="2">
+                <div>
+                  <div class="info-wrapper">
+                    <!-- <img src="images/advantage-3.png" class="img-responsive advantage-img" alt="Responsive image"> -->
+                    <h2 class="title">强有力的宣传平台</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="option" data-index="3">
+                <div>
+                  <div class="info-wrapper">
+                    <!-- <img src="images/advantage-4.png" class="img-responsive advantage-img" alt="Responsive image"> -->
+                    <h2 class="title">校企合作资源</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="option" data-index="4">
+                <div>
+                  <div class="info-wrapper">
+                    <!-- <img src="images/advantage-5.png" class="img-responsive advantage-img" alt="Responsive image"> -->
+                    <h2 class="title">PostgreSQL企业合作</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- grade -->
+    <div class="grade" id="grade">
+      <div class="grade-title">
+        <img src="images/grade.png" class="img-responsive" alt="Responsive image">
+        <p class="title-tips">培训认证等级</p>
+      </div>
+      <div class="wrapper row grade-wrapper">
+        <div class="col-md-4 grade-item grade-item-level">
+          <img src="images/grade-1.png" class="img-responsive" alt="Responsive image">
+          <p class="grade-item-1-pgca">PCA</p>
+          <p class="grade-item-1-word">专员级</p>
+        </div>
+        <div class="col-md-4 grade-item-normal">
+          <p class="grade-item-normal-p-1">面向PostgreSQL数据库的高级SQL使用、备份、容灾、维护、数据库优化、高级功能特性等内容。</p>
+        </div>
+        <div class="col-md-4 grade-item grade-item-level grade-item-senior">
+          <img src="images/grade-2.png" class="img-responsive" alt="Responsive image">
+          <p class="grade-item-1-pgca">PCM</p>
+          <p class="grade-item-1-word">大师级</p>
+        </div>
+        <div class="col-md-4 grade-item-normal grade-item-normal-1">
+          <p>面向PostgreSQL数据库的SQL使用、安装配置、日常维护、等内容，解决在PostgreSQL日常使用中的一般管理问题。</p>
+        </div>
+        <div class="col-md-4 grade-item grade-item-level grade-item-intermediate">
+          <img src="images/grade-3.png" class="img-responsive" alt="Responsive image">
+          <p class="grade-item-1-pgca">PCP</p>
+          <p class="grade-item-1-word">专家级</p>
+        </div>
+        <div class="col-md-4 grade-item-normal grade-item-normal-1">
+          <p>PCM是PostgreSQL最高级别认证，主要面向数据库资深架构师，包括数据库的技术内幕；高级诊断调优；数据库的高可用、负载均衡、分布式等架构设计等内容。</p>
+        </div>
+      </div>
+    </div>
+    <!-- course -->
+    <div class="course" id="course">
+      <div class="grade-title">
+        <img src="images/course.png" class="img-responsive" alt="Responsive image">
+        <p class="title-tips">培训认证课程</p>
+      </div>
+      <div class="wrapper row">
+        <div class="col-md-6">
+          <img class="course-img-1" src="images/course-1.jpg" class="img-responsive" alt="Responsive image">
+        </div>
+        
+        <div class="col-md-6">
+          <div class="course-item-wrapper">
+            <p class="course-level">PCA 专员级</p>
+            <p class="course-level-tips">资质要求：须参加社区认可的考试机构的培训并通过PCA认证考试。</p>
+            <p class="course-name">PostgreSQL管理基础（课程代号：PCA-001）</p>
+            <p class="course-introduce">PostgreSQL简介、安装使用、psql使用、数据类型及函数、SQL基础</p>
+            <!-- <div class="detail-btn">DETAIL</div> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="course-item-wrapper course-item-wrapper-more">
+            <p class="course-level">PCP 专家级</p>
+            <p class="course-level-tips">资质要求：须参加社区认可的考试机构的培训并通过PCP认证的笔试和操作考试。</p>
+            <p class="course-name">PostgreSQL高级管理（课程代号：PCP-001）</p>
+            <p class="course-introduce">PostgreSQL主备库的搭建、数据库的备份与容灾、PostgreSQL的SQL优化、PostgreSQL的系统优化</p>
+
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<p class="course-name">1.DBA方向</p>-->
+                <!--<p class="course-introduce">PG管理进阶（课程代号：PCP-001）</p>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!-- <div class="detail-btn">DETAIL</div> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="course-img" src="images/course-2.jpg" class="img-responsive" alt="Responsive image">
+        </div>
+        <div class="col-md-6">
+          <img class="course-img" src="images/course-3.jpg" class="img-responsive" alt="Responsive image">
+        </div>
+        <div class="col-md-6">
+          <div class="course-item-wrapper course-item-wrapper-more course-item-wrapper-senior">
+            <p class="course-level">PCM 大师级</p>
+            <p class="course-level-tips">资质要求：须参加社区认可的考试机构的培训并通过PCM认证的笔试和操作考试以及社区的面试环节。</p>
+            <p class="course-name">PostgreSQL技术内幕（课程代号：PCM-001）</p>
+            <p class="course-introduce">PostgreSQL的技术内幕、故障诊断、架构设计、数据恢复</p>
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<p class="course-name">1.PG数据库安全管控</p>-->
+                <!--<p class="course-introduce">（课程代号: PGCM-C-094）</p>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<p class="course-name">2.PG数据库优化</p>-->
+                <!--<p class="course-introduce">（课程代号: PGCM-C-095）</p>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<p class="course-name">3.PG高可用</p>-->
+                <!--<p class="course-introduce">（课程代号: PGCM-C-096）</p>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<p class="course-name">4.PG分布式</p>-->
+                <!--<p class="course-introduce">（课程代号: PGCM-C-097）</p>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!-- <div class="detail-btn">DETAIL</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- price -->
+    <div class="price" id="price">
+      <div class="grade-title">
+        <img src="images/price.png" class="img-responsive" alt="Responsive image">
+        <p class="title-tips">考试价格</p>
+      </div>
+      <div class="row wrapper">
+        <div class="col-md-4">
+          <div class="price-item">
+            <div class="price-item-top">
+              <img src="images/grade-1.png" class="img-responsive" alt="Responsive image">
+              <p class="grade-item-1-pgca">PCA</p>
+              <p class="grade-item-1-word">专员级</p>
+            </div>
+            <div class="price-item-bottom">
+              <h1 class="price-item-title">300</h1>
+              <p class="price-item-tips">考试费用（元/人次）</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="price-item">
+            <div class="price-item-top price-item-top-middle">
+              <img src="images/grade-3.png" class="img-responsive" alt="Responsive image">
+              <p class="grade-item-1-pgca">PCP</p>
+              <p class="grade-item-1-word">专家级</p>
+            </div>
+            <div class="price-item-bottom">
+              <h1 class="price-item-title">1500</h1>
+              <p class="price-item-tips">考试费用（元/人次）</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="price-item">
+            <div class="price-item-top price-item-top-senior">
+              <img src="images/grade-2.png" class="img-responsive" alt="Responsive image">
+              <p class="grade-item-1-pgca">PCM</p>
+              <p class="grade-item-1-word">大师级</p>
+            </div>
+            <div class="price-item-bottom">
+              <h1 class="price-item-title">5000</h1>
+              <p class="price-item-tips">考试费用（元/人次）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- agency -->
+    <!-- <div class="agency" id="agency">
+      <div class="wrapper">
+        <div class="agency-title">
+          <img src="images/agency.png" class="img-responsive" alt="Responsive image">
+          <p class="title-tips">合作培训机构</p>
+          <div class="agency-title-tips">点击LOGO了解更多培训机构信息。</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/agency-1.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-2.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-3.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-4.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-5.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-6.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-7.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-8.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-9.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-10.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-11.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+          <div class="col-md-3">
+            <img src="images/agency-12.png" class="img-responsive agency-img" alt="Responsive image">
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- questions -->
+    <div class="questions" id="questions">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="images/questions-1.jpg" class="img-responsive questions-bg" alt="Responsive image">
+        </div>
+        <div class="col-md-7 questions-right">
+          <div class="questions-wrapper">
+            <div class="questions-title">
+              <img src="images/questions.png" class="img-responsive" alt="Responsive image">
+              <p class="title-tips">培训认证答疑</p>
+            </div>
+            <p class="questions-tips">如果您对我们的培训认证体系感兴趣，或者有任何疑问，可以随时向我们咨询（cert@postgres.cn）。</p>
+            <p class="questions-tips-1">
+              <img src="images/questions-email.png" class="img-responsive questions-tips-img" alt="Responsive image">
+              <span>cert@postgres.cn</span>
+              <!--<img src="images/questions-tel.png" class="img-responsive questions-tips-img questions-tips-second" alt="Responsive image">-->
+              <span>PostgreSQL社区培训认证委员会</span>
+            </p>
+            <!--<div class="message-title">cert@postgres.cn</div>-->
+            <!--<div class="row message-form">-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="questions-input-wrapper">-->
+                  <!--<span class="questions-input-title">Name</span>-->
+                  <!--<span class="questions-require">*</span>-->
+                  <!--<input type="text" class="questions-input" />-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="questions-input-wrapper">-->
+                  <!--<span class="questions-input-title">Phone</span>-->
+                  <!--<span class="questions-require">*</span>-->
+                  <!--<input type="text" class="questions-input" />-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="questions-input-wrapper">-->
+                  <!--<span class="questions-input-title">Email</span>-->
+                  <!--<span class="questions-require">*</span>-->
+                  <!--<input type="text" class="questions-input" />-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="questions-input-wrapper">-->
+                  <!--<span class="questions-input-title">Company</span>-->
+                  <!--<input type="text" class="questions-input" />-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<textarea class="questions-textarea" placeholder="Message"></textarea>-->
+              <!--<div class="detail-btn">SUBMIT</div>-->
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- news -->
+    <!-- <div class="news" id="news">
+      <div class="grade-title">
+        <img src="images/news.png" class="img-responsive" alt="Responsive image">
+        <p class="title-tips">培训认证新闻稿</p>
+      </div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="http://pgconf2020.postgres.cn/">
+              <img  src="images/news-2.jpg" class="img-responsive news-img" alt="Responsive image">
+              <div class="news-item-content">
+                <p class="news-item-title"></p>
+                <p class="news-item-tips">2021年1月15～1月16日，由 PostgreSQL 中文社区主办的第十届《PostgreSQL 中国技术大会》将在广州万富希尔顿酒店现场隆重举办。</p>
+                <p class="news-item-time">发表时间：2020-12-29</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="http://www.postgres.cn/docs/12/">
+              <img src="images/news-1.jpg" class="img-responsive news-img" alt="Responsive image">
+              <div class="news-item-content">
+                <p class="news-item-title">PostgreSQL 12.2 手册</p>
+                <p class="news-item-tips">PostgreSQL版本手册</p>
+                <p class="news-item-time">发表时间：2020-10-28 08:00:00</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="http://www.postgres.cn/v2/news/viewone/1/645">
+              <img src="images/book.jpg" class="img-responsive news-img" alt="Responsive image">
+              <div class="news-item-content">
+                <p class="news-item-title">《PostgreSQL修炼之道：从小工到专家》</p>
+                <p class="news-item-tips">PostgreSQL数据库领域经典著作</p>
+                <p class="news-item-time">发表时间：2020-12-29</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>                         
+  <script type="text/javascript">
+    $(function() {
+      // 获取当前屏幕宽度
+      let viewWidth = $(window).width()
+      if (viewWidth >= 768) {
+        $('.desktop-wrapper').show()
+      } else {
+        $('.swiper-container').show()
+      }
+      if (viewWidth >= 768) {
+        navInit()
+        // 监听滚动高度
+        $(window).on('scroll',function(){
+          navInit()
+        })
+      }
+
+      function navInit() {
+        var w = $(document).scrollTop() // 获取滚动条到顶部的垂直高度
+          if (w >= 1300){
+            $(".elevator").show()
+            // console.log(w)
+            if (w >= 5320) {
+              $('#news-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+            } else if (w >= 4894) {
+              $('#questions-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+            } else if (w >= 4164) {
+              $('#agency-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+            } else if (w >= 3479) {
+              $('#price-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+            } else if (w >= 2182) {
+              $('#course-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+            } else if (w >= 1447) {
+              $('#grade-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+            }
+
+
+          } else {
+            $(".elevator").hide()
+          }
+      }
+      
+      // // 电梯事件代理
+      // $('.elevator').on('click','.elevator-item',function(){
+      //   $(this).addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+      // })
+
+      $(".desktop-wrapper .option").click(function (i) {
+        const index = $(this).data('index')
+        var numDom = document.getElementById('title-tips')
+        numDom.innerHTML = `0${index + 1}`
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+      });
+
+      //  初始化banner
+      var swiper = new Swiper('.swiper-container', {
+        // initialSlide: 1,
+        // slidesPerView: 3,
+        // spaceBetween: 0,
+        // centeredSlides: true,
+        // // loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on:{
+          transitionEnd: function(){
+            // console.log(this.activeIndex);
+            var numDom = document.getElementById('title-tips')
+            numDom.innerHTML = `0${this.activeIndex + 1}`
+          },
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

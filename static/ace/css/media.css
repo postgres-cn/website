@@ -1,0 +1,172 @@
+
+@media (max-width: 768px) {
+  .nav>li.dropdown{
+    display: none;
+  }
+  body{
+    font-size: 14px;
+  }
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .banner-img{
+    width: 100%;
+  }
+  .banner-bg{
+    display: none;
+  }
+  .banner-word{
+    width: 90%;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .banner-1-wrapper{
+    width: 100%;
+    position: relative;
+  }
+  .banner-word-wrapper{
+    position: relative;
+    color: #000;
+    top: 1rem;
+    left: 0;
+    margin-bottom: 2rem;
+  }
+  .banner-1-title:before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    top: 10px;
+    left: 0;
+    background-color: #000;
+  }
+  .postgre-plan{
+    margin-top: 3rem;
+  }
+  .postgre-plan-left-title{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+  .postgre-plan-left-word-1{
+    margin-bottom: 3rem;
+  }
+  .postgre-plan-left-word-3{
+    margin-top: 3rem;
+  }
+  .postgre-plan-left{
+    width: 90%;
+  }
+  .postgre-plan-right{
+    width: 90%;
+  }
+  .postgre-plan-right-title{
+    font-size: 1.6rem;
+  }
+  .postgre-plan-right-word-5{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .postgre-plan-img{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .postgre-members-item-img{
+    height: 14rem;
+  }
+  .postgre-plan-right-word-2{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-top: 1rem;
+  }
+  .banner-1-word{
+    width: 100%;
+  }
+  .postgre-plan-left-wrapper{
+    height: 36rem;
+  }
+  .postgre-plan-right-wrapper{
+    height: 72rem;
+  }
+  .postgre-members-header-left-title{
+    font-size: 1.6rem;
+    width: 90%;
+  }
+  .postgre-members-header-left{
+    position: relative;
+    top: 0;
+  }
+  .postgre-members-header-icon-wrapper{
+    margin-top: 1rem;
+  }
+  .postgre-members-header-right{
+    position: relative;
+    top: 48px;
+  }
+  .postgre-members-header-bg{
+    height: 100%;
+  }
+  .postgre-members-header-right-word-2{
+    font-size: 1.2rem;
+  }
+  .postgre-grade{
+    margin-top: 2rem;
+  }
+  .postgre-tobe-2-left-wrapper{
+    height: 12rem;
+  }
+  .postgre-tobe-2-img{
+    height: 12rem;
+  }
+  .postgre-tobe-2-left-content{
+    float: unset;
+    width: 90%;
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+  .postgre-tobe-bg{
+    height: auto;
+  }
+  .download-input-word{
+    width: 10rem;
+  }
+  .download-input-tips{
+    display: block;
+    margin-top: 2rem;
+  }
+  .more-about-title-wrapper{
+    padding-left: 1rem;
+  }
+  .more-about-title{
+    width: 90%;
+    font-size: 1.6rem;
+  }
+  .postgre-tobe-title{
+    font-size: 1.6rem;
+  }
+  .postgre-tobe-word{
+    font-size: 1.2rem;
+  }
+  .more-about-left-img{
+    height: 20rem;
+  }
+  .more-about-tips{
+    font-size: 1rem;
+    line-height: 2.0rem;
+  }
+  .more-about-right-img{
+    height: 16rem;
+  }
+  .swiper-slide{
+    padding: 0 10px;
+  }
+}
+@media (min-width: 1000px) {
+  body{
+    min-width: 1200px;
+  }
+}

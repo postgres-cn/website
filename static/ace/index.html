@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>首页</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+  <!-- <link href="css/swiper-bundle.min.css" rel="stylesheet"> -->
+
+  <!-- Custom styles for this template -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/index.css?v=1" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <link href="http://at.alicdn.com/t/font_2306961_v4kwj6b5fuk.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-default navpost">
+    <div class="container-fluid wrapper">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://postgresql.org"><img class="logo" src="images/logo.png" alt=""></a>
+        <a href="/v2/home" class="navbar-brand"> PostgreSQL中文社区
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ><a href="/v2/home">首页 <span class="sr-only">(current)</span></a></li>
+          <li><a href="/v2/news">社区新闻</a></li>
+          <li><a href="/v2/document">中文文档</a></li>
+		   <li><a href="/static/ace/">加入ACE</a></li> 
+           <li><a href="/static/train/">培训认证</a></li> 
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相关资料 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/v2/about">了解PostgreSQL</a></li>
+              <li><a href="/v2/document">PostgreSQL相关文档</a></li>
+              <li><a href="/v2/download">PostgreSQL软件下载</a></li>
+           <li><a href="/v2/book">PostgreSQL中文图书</a></li>
+              <li><a href="/v2/news/typelist/1/会议资料">社区年会PPT资料</a></li>
+              <li><a href="/v2/community">关于中文社区</a></li>
+            </ul>
+          </li>
+        </ul>
+
+			<form class="navbar-form navbar-left  hidden-xs hidden-sm" name=srch action=/v2/search method=post>
+                    <div class="form-group" style="max-width:120px">
+                        <input type="text" class="form-control" name="keysrh" placeholder="Search" style="max-width:120px">
+                    </div>
+             </form>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/v2/act/register">注册</a></a></li>
+          <li><a href="/v2/act/userinfo">登录</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <section>
+    <!-- banner -->
+    <div class="banner" id="banner">
+      <img class="banner-bg" src="images/banner-2.png" alt="">
+      <div class="wrapper">
+        <img class="banner-img" src="images/hero-image.jpg" alt="">
+        <div class="banner-word">Community Tech Leaders </div>
+        <div class="banner-1-wrapper">
+          <img class="banner-img banner-img-1" src="images/banner-1.jpg" alt="">
+          <div class="banner-word-wrapper">
+            <div class="banner-1-title">社区技术领袖</div>
+            <p class="banner-1-word"><span class="blue">PostgreSQL ACE 计划</span>用来承认和表彰那些对国内PostgreSQL技术的发展、推广、应用等方面有卓越贡献的人</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- postgreSQL ACE 计划 -->
+    <div class="postgre-plan" id="postgre-plan">
+      <div class="row">
+        <div class="col-md-5 postgre-plan-left-wrapper">
+          <div class="postgre-plan-left">
+            <div class="postgre-plan-left-title">PIONEER OF COMMUNITY PRACTICE</div>
+            <p class="postgre-plan-left-word-1">让中国PostgreSQL社区做您的舞台</p>
+            <p class="postgre-plan-left-word-2">中国PostgreSQL培训认证</p>
+            <p class="postgre-plan-left-word-2">PostgreSQL中国技术大会</p>
+            <p class="postgre-plan-left-word-2">PostgreSQL全国技术沙龙巡回</p>
+            <p class="postgre-plan-left-word-2">PostgreSQL全国区域用户组活动</p>
+            <p class="postgre-plan-left-word-2">…… </p>
+            <div class="postgre-plan-left-word-3">社区实践先锋</div>
+          </div>
+        </div>
+        <div class="col-md-7 postgre-plan-right-wrapper">
+          <div class="postgre-plan-right">
+            <div class="postgre-plan-right-title">ABOUT PostgreSQL ACE</div>
+            <div class="postgre-plan-right-word-1">PostgreSQL ACE 计划</div>
+            <div class="postgre-plan-right-word-2">“PostgreSQL ACE计划”面向以下人群：</div>
+            <img class="postgre-plan-img" src="images/people.png" alt="">
+            <div class="postgre-plan-right-word-3"> PostgreSQL技术大牛，包括但不限于布道者，架构师，DBA、DEV、内核研发等等资深技术人员。</div>
+            <div class="postgre-plan-right-word-4">这些人技术娴熟有强烈的意愿分享他们的知识和经验，他们是相应领域的专家，包括但不限于撰写PostgreSQL技术文章、博客或书籍；热心于在各类活动中做PostgreSQL技术分享；编写PostgreSQL插件或扩展功能；发现PostgreSQL bug和提交补丁等。</div>
+            <!--<img class="postgre-plan-img" src="images/people.png" alt="">-->
+            <!--<div class="postgre-plan-right-word-3">（2）PostgreSQL生态参与者，包括但不限于高级管理人员、社群组织者、培训机构讲师、高校老师等。</div>-->
+            <!--<div class="postgre-plan-right-word-4">这些人对PostgreSQL生态建设添砖加瓦。他们让更多的人接触、了解和参与PostgreSQL，包括但不限于各地的PostgreSQL用户会组织者；PostgreSQL技术群群主；PostgreSQL技术会议、沙龙组织者；PostgreSQL培训认证建设者、讲师；对PostgreSQL有研究贡献的高校教师；在PostgreSQL推广、应用方面做出成果的媒体工作者、市场从业者等。 </div>-->
+            <div class="postgre-plan-right-word-5">ALL YOUR LIFE CAREER ESCORT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- postgreSQL ACE Members-->
+    <div class="postgre-members" id="postgre-members">
+      <div class="postgre-members-header">
+        <img class="postgre-members-header-bg" src="images/members.png" alt="">
+        <div class="wrapper">
+          <div class="postgre-members-header-left">
+            <div class="postgre-members-header-left-title">PostgreSQL ACE MEMBERS</div>
+            <div class="postgre-members-header-icon-wrapper">
+              <!-- <span class="postgre-members-header-left-icon">
+                <i class="iconfont iconfanye1"></i>
+              </span>
+              <span class="postgre-members-header-right-icon">
+                <i class="iconfont iconfanye"></i>
+              </span> -->
+            </div>
+          </div>
+          <div class="postgre-members-header-right">
+            <div class="postgre-members-header-right-word-1">加入ACE，分享精神生生不息。</div>
+            <div class="postgre-members-header-right-word-2">公认的PostgreSQL专家</div>
+          </div>
+        </div>
+      </div>
+      <div class="postgre-members-wrapper wrapper">
+        <!-- pc端 -->
+        <div class=" swiper-wrapper-pc">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/1.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">陈河堆</div>
+                        <div class="postgre-members-item-tips">中兴通讯数据库平台负责人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/2.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">陈华军</div>
+                        <div class="postgre-members-item-tips">苏宁科技集团苏宁云BU架构专家</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/3.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">德哥</div>
+                        <div class="postgre-members-item-tips">阿里云数据库高级产品专家</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/11.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">谭峰</div>
+                        <div class="postgre-members-item-tips">PostgreSQL中文社区委员，浙江移动系统规划工程师</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/12.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">唐成</div>
+                        <div class="postgre-members-item-tips">中启乘数科技联合创始人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/16.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">张文升</div>
+                        <div class="postgre-members-item-tips">探探数据库负责人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/19.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">周到京</div>
+                        <div class="postgre-members-item-tips">合肥康天达软件公司创始人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/20.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">朱贤文</div>
+                        <div class="postgre-members-item-tips">成都文武信息技术有限公司 总经理</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/14.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">汪洋</div>
+                        <div class="postgre-members-item-tips">平安科技数据库产品团队总工程师</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/15.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">姚延栋</div>
+                        <div class="postgre-members-item-tips">yMatrix创始人，Greenplum中文社区创始人，壹零贰肆数字基金会（NGO）联合发起人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/13.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">王硕</div>
+                        <div class="postgre-members-item-tips">阿里云数据库技术专家</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/7.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">李海龙</div>
+                        <div class="postgre-members-item-tips">去哪儿网 PostgreSQL DBA 总监</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/8.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">刘泉</div>
+                        <div class="postgre-members-item-tips">南京航天数智科技有限公司 技术总监</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/9.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">彭煜玮</div>
+                        <div class="postgre-members-item-tips">武汉大学 博士</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/10.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">权宗亮</div>
+                        <div class="postgre-members-item-tips">研发工程师</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/6.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">姜明俊</div>
+                        <div class="postgre-members-item-tips">亚信科技数据库创新实验室总监，PostgreSQL社区核心组成员，AntDB数据库核心创始人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="./images/hxcy/21.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">萧少聪</div>
+                        <div class="postgre-members-item-tips">巨杉数据库资深总监</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="./images/hxcy/22.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">胡怡文</div>
+                        <div class="postgre-members-item-tips">数据库专家，PostgreSQL中文社区核心成员</div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <!-- 移动端 -->
+        <div class="swiper-container swiper-wrapper-mobile">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/1.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">陈河堆</div>
+                        <div class="postgre-members-item-tips">中兴通讯数据库平台负责人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/2.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">陈华军</div>
+                        <div class="postgre-members-item-tips">苏宁科技集团苏宁云BU架构专家</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/3.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">周正中</div>
+                        <div class="postgre-members-item-tips">阿里云数据库高级产品专家</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/11.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">谭峰</div>
+                        <div class="postgre-members-item-tips">PostgreSQL中文社区委员，浙江移动系统规划工程师</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/12.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">唐成</div>
+                        <div class="postgre-members-item-tips">中启乘数科技联合创始人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/16.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">张文升</div>
+                        <div class="postgre-members-item-tips">探探数据库负责人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/19.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">周到京</div>
+                        <div class="postgre-members-item-tips">合肥康天达软件公司创始人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/20.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">朱贤文</div>
+                        <div class="postgre-members-item-tips">成都文武信息技术有限公司 总经理</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/14.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">汪洋</div>
+                        <div class="postgre-members-item-tips">平安科技数据库产品团队总工程师</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/15.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">姚延栋</div>
+                        <div class="postgre-members-item-tips">yMatrix创始人，Greenplum中文社区创始人，壹零贰肆数字基金会（NGO）联合发起人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/13.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">王硕</div>
+                        <div class="postgre-members-item-tips">阿里云数据库技术专家，PostgreSQL中分社区核心组成员，中国计算机协会会员。</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/7.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">李海龙</div>
+                        <div class="postgre-members-item-tips">去哪儿网 PostgreSQL DBA 总监，PostgreSQL 中文社区核心成员。</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/8.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">刘泉</div>
+                        <div class="postgre-members-item-tips">南京航天数智科技有限公司 技术总监</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/9.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">彭煜玮</div>
+                        <div class="postgre-members-item-tips">武汉大学 博士</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/10.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">权宗亮</div>
+                        <div class="postgre-members-item-tips">研发工程师</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="images/hxcy/6.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">姜明俊</div>
+                        <div class="postgre-members-item-tips">亚信科技数据库创新实验室总监，PostgreSQL社区核心组成员，AntDB数据库核心创始人</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="./images/hxcy/21.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">萧少聪</div>
+                        <div class="postgre-members-item-tips">巨杉数据库资深总监</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="postgre-members-item" href="#">
+                      <img class="postgre-members-item-img" src="./images/hxcy/22.jpg" alt="">
+                      <div class="postgre-members-item-word">
+                        <div class="postgre-members-item-title">胡怡文</div>
+                        <div class="postgre-members-item-tips">数据库专家，PostgreSQL中文社区核心成员</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- 如何成为PostgreSQL ACE? -->
+    <div class="postgre-tobe" id="postgre-tobe">
+      <div class="postgre-tobe-title-wrapper">
+        <div class="wrapper">
+          <div class="postgre-tobe-title">如何成为PostgreSQL ACE?</div>
+          <div class="postgre-tobe-word">希望成为受尊敬的PostgreSQL ACE？如果您一直撰写文章、发表博文、提交代码或提交bug或以其他方式分享PostgreSQL相关知识，即有资格加入。</div>
+        </div>
+      </div>
+      <img class="postgre-tobe-bg postgre-tobe-bg-pc" src="images/tobe-bg.jpg" alt="">
+      <img class="postgre-tobe-bg postgre-tobe-bg-mobile" src="images/tobe-bg-mobile.jpg" alt="">
+      <div class="row postgre-tobe-2-wrapper">
+        <div class="col-md-6 postgre-tobe-2-left-wrapper">
+          <div class="postgre-tobe-2-left-content">
+            <div class="postgre-tobe-2-title">提名审查</div>
+            <div class="postgre-tobe-2-word">PostgreSQL ACE 提名由 PostgreSQL中国社区核心组成员（根据候选人的专长领域）每个季度审查一次。未能入选的候选人以后还可以再次申请。 </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="postgre-tobe-2-img" src="images/tobe-1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- PostgreSQL ACE GRADE -->
+    <div class="postgre-grade" id="postgre-grade">
+      <div class="wrapper">
+        <div class="postgre-grade-title">PostgreSQL ACE GRADE</div>
+        <div class="postgre-grade-title-1">PostgreSQL ACE 等级</div>
+        <div class="download-wrapper">
+          <a class="download-input-wrapper" href="./中国PostgreSQL ACE计划”说明及申请模板 .doc" download="./中国PostgreSQL ACE计划”说明及申请模板 .doc">
+            <span class="download-input-word">下载说明及申请表</span>
+            <span class="download-input-btn">
+              <img class="download-input-img" src="images/download.png" alt="">
+              下载
+            </span>
+          </a>
+          <span class="download-input-tips">了解详细申请条件，查看具体评审标准</span>
+        </div>
+        <div class="row postgre-grade-icon-wrapper">
+          <div class="col-md-4">
+            <div class="postgre-grade-item">
+              <img src="images/djLogo/action.jpg" alt="">
+              <div class="postgre-grade-title-2">PostgreSQL ACE ASSOCIATION</div>
+              <div class="postgre-grade-content-2">参与国内PostgreSQL技术的活跃人士</div>
+            </div> 
+          </div>
+          <div class="col-md-4">
+            <div class="postgre-grade-item">
+              <img src="images/djLogo/ace.jpg" alt="">
+              <div class="postgre-grade-title-2">PostgreSQL ACE</div>
+              <div class="postgre-grade-content-2">享誉业界的PostgreSQL技术专家，行业的知名认识</div>
+            </div> 
+          </div>
+          <div class="col-md-4">
+            <div class="postgre-grade-item">
+              <img src="images/djLogo/aceDirect.jpg" alt="">
+              <div class="postgre-grade-title-2">PostgreSQL ACE DIRECT</div>
+              <div class="postgre-grade-content-2">享誉业界PostgreSQL技术大师， 为PostgreSQL发展有突出贡献的卓越人士</div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- more about -->
+    <div class="more-about" id="more-about">
+      <div class="row">
+        <div class="col-md-6 more-about-left">
+          <img class="more-about-left-img" src="images/more-abort-1.png" alt="">
+          <div class="more-about-title-wrapper">
+            <div class="more-about-title">MORE ABOUT PostgreSQL ACE</div>
+            <div class="more-about-tips">您有任何疑问或建议，可联系：</div>
+            <div class="more-about-tips">PostgreSQL中国社区（cert@postgres.cn）</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="more-about-right-img" src="images/more-about-2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>     
+  <script type="text/javascript">
+    $(function() {
+      //  获取当前屏幕宽度
+      let viewWidth = $(window).width()
+      
+      if (viewWidth >= 768) {
+        $('.swiper-wrapper-pc').show()
+        $('.postgre-tobe-bg-pc').show()
+        $('.postgre-tobe-bg-pc').css("display","block");
+      } else {
+        $('.swiper-wrapper-mobile').show()
+        $('.postgre-tobe-bg-mobile').show()
+        $('.postgre-tobe-bg-mobile').css("display","block");
+      }
+
+      if (viewWidth >= 768) {
+        $(".elevator").show()
+        // 监听滚动高度
+        $(window).on('scroll',function(){
+          var w = $(document).scrollTop() // 获取滚动条到顶部的垂直高度
+          // console.log(w)
+          if (w >= 4311) {
+            $('#more-about-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+          } else if (w >= 3949) {
+            $('#postgre-grade-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+          } else if (w >= 2885) {
+            $('#postgre-tobe-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+          } else if (w >= 1580) {
+            $('#postgre-members-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+          } else if (w >= 640) {
+            $('#postgre-plan-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+          } else if (w >= 0) {
+            $('#banner-nav').addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+          }
+        })
+      } else {
+        $(".elevator").hide()
+      }
+      
+      // // 电梯事件代理
+      // $('.elevator').on('click','.elevator-item',function(){
+      //   $(this).addClass('elevator-item-active').siblings().removeClass('elevator-item-active')
+      // })
+
+      // 初始化banner
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }
+      })
+      
+      $('.postgre-members-header-left-icon').click(function(){
+        viewWidth >= 768 ? swiper[0].slidePrev() : swiper[1].slidePrev()
+      })
+      $('.postgre-members-header-right-icon').click(function(){
+        viewWidth >= 768 ? swiper[0].slideNext() : swiper[1].slideNext()
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>认证</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/banner.css" rel="stylesheet">
+  <link href="css/index.css?v=1" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-default navpost">
+        <div class="container-fluid wrapper">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://postgresql.org"><img class="logo" src="images/logo.png" alt=""></a>
+             <a href="/v2/home" class="navbar-brand"> PostgreSQL中文社区
+            </a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li ><a href="/v2/home">首页 <span class="sr-only">(current)</span></a></li>
+              <li><a href="/v2/news">社区新闻</a></li>
+              <li><a href="/v2/document">中文文档</a></li>
+                                 <li><a href="/static/ace/">加入ACE</a></li> 
+                        <li><a href="/static/train/">培训认证</a></li> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相关资料 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/v2/about">了解PostgreSQL</a></li>
+                  <li><a href="/v2/document">PostgreSQL相关文档</a></li>
+                  <li><a href="/v2/download">PostgreSQL软件下载</a></li>
+               <li><a href="/v2/book">PostgreSQL中文图书</a></li>
+                  <li><a href="/v2/news/typelist/1/会议资料">社区年会PPT资料</a></li>
+                  <li><a href="/v2/community">关于中文社区</a></li>
+                </ul>
+              </li>
+            </ul>
+                    <form class="navbar-form navbar-left  hidden-xs hidden-sm" name=srch action=/v2/search method=post>
+                        <div class="form-group" style="max-width:120px">
+                            <input type="text" class="form-control" name="keysrh" placeholder="Search" style="max-width:120px">
+                        </div>
+                    </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/v2/act/register">注册</a></a></li>
+              <li><a href="/v2/act/userinfo">登录</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <div class="serchBtnBox" >
+        <h1 style="font-size: 2rem;text-align: center;">认证证书查询</h1>
+        <input class="form-control" placeholder="请在此输入姓名" id="nameId">
+        <input class="form-control" style="margin-top: 20px;" id="last4num" placeholder="请在此输入证书号后4位">
+        <button id="searchBtn">查询</button>
+    </div>
+    <div id="certificateQuery">
+        <img id="certificateQueryImg" width=640 src="./images/mb.jpeg">
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+	var picList = [
+	"于天恒19096018116",
+"于成智1909619110",
+"任玉龙19120722221",
+"何勇19107034213",
+"何敏19096732108",
+"冯超19090432105",
+"刘用19102112206",
+"刘邦艺19107217201",
+"刘雪柏19100412205",
+"周国超19103013215",
+"周辉19108294214",
+"唐林19095516114",
+"姜柳19110722602",
+"孙雅艺19096065107",
+"宋子朋19101417207",
+"张婷婷19100209218",
+"张肖飞19094575113",
+"张飞雄19101714204",
+"彭占元19095126102",
+"朱丽云19100720217",
+"朱贵平19106894219",
+"李士勇19110722607",
+"李敬财19095912115",
+"李耀宗19101832222",
+"杨阳子19106124203",
+"林根19106710220",
+"王亭19102144216",
+"王克光19110722603",
+"王向华19110722621",
+"王庆磊19110722605",
+"王玉华19110722604",
+"石勇虎19107015212",
+"石敦斌19103610221",
+"秦将华19092510109",
+"窦培19092218111",
+"罗文芳19103856210",
+"胡璨19106010208",
+"舒正英19098513112",
+"见永康19107890211",
+"赵云龙19096615103",
+"赵玉珮19104144202",
+"邱文辉19093517107",
+"陈阵19110722606",
+"马文豪19091239104",
+"马留强19120722228",
+"高永超19091510106",
+"鲁山19110722601",
+"齐红涛19103818209" 
+]
+       $('#searchBtn').click(function(){
+		   var objPic = "/images/mb.jpeg" ; 
+		   var keyName = $('#nameId').val()
+		   var keyNum = $('#last4num').val() 
+		   if ( ! keyName && ! keyNum )  {
+			   alert('学员姓名或是证书后4位至少应录入一个！') ; return ; 
+		   }
+
+		   var finalKey = keyName.length>1 ? keyName : keyNum 
+		   var objEle = picList.filter(x => x.startsWith(finalKey) || x.endsWith(finalKey) )[0] 
+		   if ( objEle) { objPic = "/images/certs/2019/" + objEle + ".jpg" ;
+		   }else {  alert('未找到符合条件的记录！') ; return ; 
+			   }
+		   console.log('KeyName:' , keyName , ',keyNum = ' , keyNum, ",pic=" , objPic ) ;
+		   /*document.getElementById('certificateQueryImg').src = objPic ; */
+		   $('#certificateQueryImg').attr('src',objPic) ; 
+
+			$('#certificateQuery').css('display','block')
+       })
+    </script>
+</body>
+</html>   

@@ -21,6 +21,7 @@
                 <li><a target=_blank  style="color:#fff" href="http://w3.ww-it.cn/">成都文武信息技术有限公司</a></li>
                 <li><a target=_blank  style="color:#fff" href="http://www.cstech.ltd/">杭州乘数科技有限公司</a></li>
                 <li><a target=_blank  style="color:#fff" href="https://www.aliyun.com/product/rds/postgresql?spm=5176.198144.cloudEssentials.44.b68d346dRG9UL4">阿里云</a></li>
+				<li><a target=_blank  style="color:#fff" href="https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596">华为云</li>
                 <li><a target=_blank  style="color:#fff" href=" https://www.qingcloud.com/products/postgresql/">青云(北京优帆科技有限公司)</a></li>
             </ul>
         </div>
