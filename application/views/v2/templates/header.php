@@ -14,7 +14,22 @@
     <script s rc="/js/bootstrap.bundle.min.js"></script>
 
 	<script src="/js/showdown.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+(function() {
+    var el = document.createElement('script');
+    el.type = 'text/javascript';
+    el.charset = 'utf-8';
+    el.async = true;
+    var ref = document.getElementsByTagName('script')[0];
+    ref.parentNode.insertBefore(el, ref);
+    el.src = 'https://w.cnzz.com/c.php?id=1256993191&async=1';
+})();
+</script>
+<script>
+var _czc = _czc || [];
 
+_czc.push(["_setAccount", "1256993191"]);
+</script>
 </head>
 <body>
 <?php

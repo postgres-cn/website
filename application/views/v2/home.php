@@ -53,7 +53,7 @@ $imgArr = array("about" =>"https://www.aliyun.com/product/rds/postgresql",
 				"discount"=>"https://www.aliyun.com/database/postgresqlactivity",
 				"imgrecog"=>"https://help.aliyun.com/document_detail/154873.html",
 				"sales_p2p"=>"https://help.aliyun.com/document_detail/154080.html");
-shuffle($keyList) ;
+//shuffle($keyList) ;
 //阿里云的PPT轮播要求每次随机顺序，因此大会的不加入数组；
 $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFound) > 0 ? "cover" : "contain" ;
 
@@ -69,28 +69,30 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
 	</ol>
 
 	<section class="carousel-inner" style="min-height:300px;max-height:500px;">
-		<div class="item active" style="background-color:#223cd1;text-align:center;">
+		<!--div class="item active" style="background-color:#223cd1;text-align:center;">
 			<a href="http://pgconf2020.postgres.cn" target="_blank"><img src="/image/pgconf2020_v3.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
-		</div>
-		<div class="item" style="background-color:#223cd1;text-align:center;">
-			<a href="https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596" target="_blank"><img src="/image/huawei_cloud1.jpg" 
+		</div -->
+		<div class="item active" style="background-color:#223cd1;text-align:center;">
+			<a href="#" 
+			 onclick="countURLAccess('华为云','https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596')">
+			<img src="/image/huawei_cloud1.jpg" id="huawei_pic" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 		<div class="item" style="background-color:#223cd1;text-align:center;">
-			<a href="<?php echo $imgArr[$keyList[0]]; ?>" target="_blank"><img src="/image/aliyun_<?php echo $keyList[0]; ?>.jpg" 
+			<a href="#" onclick="countURLAccess('阿里关于','<?php echo $imgArr[$keyList[0]]; ?>')" ><img src="/image/aliyun_<?php echo $keyList[0]; ?>.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 		<div class="item" style="background-color:#223cd1;text-align:center;">
-			<a href="<?php echo $imgArr[$keyList[1]]; ?>" target="_blank"><img src="/image/aliyun_<?php echo $keyList[1]; ?>.jpg" 
+			<a href="#" onclick="countURLAccess('阿里促销','<?php echo $imgArr[$keyList[1]]; ?>')" ><img src="/image/aliyun_<?php echo $keyList[1]; ?>.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 		<div class="item" style="background-color:#223cd1;text-align:center;">
-			<a href="<?php echo $imgArr[$keyList[2]]; ?>" target="_blank" ><img src="/image/aliyun_<?php echo $keyList[2]; ?>.jpg" 
+			<a href="#" onclick="countURLAccess('阿里图象识别','<?php echo $imgArr[$keyList[2]]; ?>')"><img src="/image/aliyun_<?php echo $keyList[2]; ?>.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 		<div class="item" style="background-color:#223cd1;text-align:center;">
-			<a href="<?php echo $imgArr[$keyList[3]]; ?>" target="_blank" ><img src="/image/aliyun_<?php echo $keyList[3]; ?>.jpg" 
+			<a href="#" onclick="countURLAccess('阿里销售画像','<?php echo $imgArr[$keyList[3]]; ?>')" ><img src="/image/aliyun_<?php echo $keyList[3]; ?>.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 	</section>
@@ -235,4 +237,11 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
         pause: "hover",
         wrap: true
     });
+
+	function countURLAccess(objType, objURL){
+		/*_czc.push(["_trackPageview","/华为云","http://postgres.cn/v2/home/"]) ; */
+		_czc.push(["_trackEvent","横幅","弹窗",objType, "1","huawei_pic"]) ;
+		console.log("push Pageview & Event ", (new Date())) ; 
+		window.open(objURL) ; 
+	}
 </script>
