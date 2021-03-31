@@ -75,8 +75,14 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
 		</div -->
 		<div class="item active" style="background-color:#223cd1;text-align:center;">
 			<a href="#" 
-			 onclick="countURLAccess('华为云','https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596')">
+			 onclick="countURLAccess('华为Cloud','https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596')">
 			<img src="/image/huawei_cloud1.jpg" id="huawei_pic" 
+					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
+		</div>
+		<div class="item" style="background-color:#223cd1;text-align:center;">
+			<a href="#" 
+			 onclick="countURLAccess('华为Trial','https://activity.huaweicloud.com/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036595')">
+			<img src="/image/huawei_cloud2.jpg" id="huawei_pic2" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
 		<div class="item" style="background-color:#223cd1;text-align:center;">
@@ -205,8 +211,8 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
                     <li><a target=_blank href="https://www.citusdata.com/">Citus Data官网</a></li>
                     <li><a target=_blank href="http://www.postgis.net/">PostGIS官网</a></li>
                     <li><a target=_blank href="https://www.aliyun.com/product/rds/postgresql">阿里云RDS PostgreSQL</a></li>
-                    <li><a target=_blank href="https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596">华为云RDS for PG</a></li>
-
+                    <li><a href="#" 
+			 onclick="countURLAccess('华为LEFTLink','https://www.huaweicloud.com/product/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036596')">华为云RDS for PG</a></li>
                     <li><a target=_blank href="https://github.com/digoal/blog/blob/master/README.md">德哥的博客</a></li>
                     <li><a target=_blank href="https://postgres.fun/">francs的博客</a></li>
                     <li><a target=_blank href="http://www.pgsql.tech">乘数的PG技术网站</a></li>

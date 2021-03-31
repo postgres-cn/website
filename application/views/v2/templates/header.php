@@ -61,6 +61,9 @@ $userpic = $this->session->userdata('userpic');
                     <li><a href="/v2/home">首页 <span class="sr-only">(current)</span></a></li>
                     <li><a href="/v2/news">社区新闻</a></li>
                     <li><a href="/v2/document">中文文档</a></li>
+			        <li><a href="/static/ace/">加入ACE</a></li> 
+					<!-- 2021-03-31 Temp Closed 
+                    <li><a href="/static/train/">培训认证</a></li>  -->
                     <!-- 2020-02-20 Closed 
                     <li class="hidden-xs hidden-sm"><a href="/v2/faq">有问有答</a></li> 
                     <li><a href="/v2/certificate">培训认证</a></li> -->
