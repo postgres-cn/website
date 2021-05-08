@@ -166,10 +166,9 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
 	<div class="panel panel-default">
             <div class="panel-heading">社区组织</div>
             <div class="panel-body">
-                <li>主　席：<b>赵振平</b></li>
-                <li>副主席：<b>唐成</b></li>
-                <li>委　员：<small
-                >萧少聪、周正中、汪洋、张文升、陈河堆、朱贤文、李海龙、周到京、姜明俊、谭峰、王硕、陈华军、秦红胜、刘泉、胡怡文、彭煜玮、胡森、姚延栋、韩涵、权宗亮、赵全明。(排名不分先后)</small> </li>
+                <li>主　席：<b>张文升</b></li>
+                <li>委　员：<small>组织架构调整中。。。</small> </li>
+				<!--萧少聪、周正中、汪洋、张文升、陈河堆、朱贤文、李海龙、周到京、姜明俊、谭峰、王硕、陈华军、秦红胜、刘泉、胡怡文、彭煜玮、胡森、姚延栋、韩涵、权宗亮、赵全明。(排名不分先后)-->
             </div>
 
 	</div>
