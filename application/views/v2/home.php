@@ -79,12 +79,14 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
 			<img src="/image/huawei_cloud1.jpg" id="huawei_pic" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
+		<!--
 		<div class="item" style="background-color:#223cd1;text-align:center;">
 			<a href="#" 
 			 onclick="countURLAccess('华为Trial','https://activity.huaweicloud.com/pg.html?utm_source=PGzhongwenshequ&utm_medium=banner&utm_campaign=&utm_content=&utm_term=&utm_adplace=AdPlace036595')">
 			<img src="/image/huawei_cloud2.jpg" id="huawei_pic2" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
 		</div>
+		-->
 		<div class="item" style="background-color:#223cd1;text-align:center;">
 			<a href="#" onclick="countURLAccess('阿里关于','<?php echo $imgArr[$keyList[0]]; ?>')" ><img src="/image/aliyun_<?php echo $keyList[0]; ?>.jpg" 
 					alt="" style="background-color:#223cd1;min-height:300px;max-height:500px;object-fit:<?php echo $picClass ; ?>;"></a>
@@ -167,8 +169,8 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
             <div class="panel-heading">社区组织</div>
             <div class="panel-body">
                 <li>主　席：<b>张文升</b></li>
-                <li>委　员：<small>组织架构调整中。。。</small> </li>
-				<!--萧少聪、周正中、汪洋、张文升、陈河堆、朱贤文、李海龙、周到京、姜明俊、谭峰、王硕、陈华军、秦红胜、刘泉、胡怡文、彭煜玮、胡森、姚延栋、韩涵、权宗亮、赵全明。(排名不分先后)-->
+                <li>常　委：<small>彭煜玮，周正中，朱贤文，唐成，姚延栋，姜明俊，张文升</small> </li>
+				<li>委　员：<small>汪洋，周到京，赵全明，谭峰，陈华军，秦红胜，李海龙，王硕，陈河堆，刘泉</small></li>
             </div>
 
 	</div>
