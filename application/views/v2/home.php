@@ -171,6 +171,7 @@ $picClass = preg_match_all('/iPhone|iPad|iPod|Android/i', $userAgent, $wordsFoun
                 <li>主　席：<b>张文升</b></li>
                 <li>常　委：<small>彭煜玮，周正中，朱贤文，唐成，姚延栋，姜明俊，张文升</small> </li>
 				<li>委　员：<small>汪洋，周到京，赵全明，谭峰，陈华军，秦红胜，李海龙，王硕，陈河堆，刘泉</small></li>
+				<li>顾　问：<small>李元佳，萧少聪，胡怡文，权宗亮，赵振平，韩涵，谢灿扬</small></li>
             </div>
 
 	</div>
